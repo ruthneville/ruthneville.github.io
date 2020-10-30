@@ -29,4 +29,4 @@ My background is in Political Science, and in my spare time I still like to keep
 </ul>
 
 
-<l>i<a href="anotherpage.md">
+<li><a href="anotherpage.md">
