@@ -12,21 +12,6 @@ My research project is based on predicting future demand for UK higher education
   <br>
 My background is in Political Science, and in my spare time I still like to keep up with electoral politics and research on sociological drivers for voting behaviour. </p>
 
-<h2> Professional Background </h2> 
-<ul>
-  <li> <strong> Assistant Data Analyst </strong> <br>
-    University of Manchester <br>
-    <em> 2017 - 2019 </em> </li>
-  </ul>
-<h2> Academic Background </h2>
-<ul>
-<li> <strong> Political Science - Democracy and Elections (MA) </strong> <br>
-  University of Manchester  <br>
-  <em> 2017 - 2018 </em> </li>
-  <li> <strong> Philosophy, Politics, and Economics (BA) </strong> <br>
-  Lancaster University  <br>
-  <em> 2013 - 2016 </em> </li>  
-</ul>
-
+<p> You can find out more about my education and professional experience <a href=https://ruthneville.github.io/education.html>HERE!</a> </p>
 
 <p> My ABM model can be found <a href="https://ruthneville.github.io/ABM.html">HERE!</a> </p>
