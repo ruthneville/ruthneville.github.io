@@ -11,6 +11,8 @@ My research project is based on predicting future demand for UK higher education
   <br>
 My background is in Political Science, and in my spare time I still like to keep up with electoral politics and research on sociological drivers for voting behaviour. </p>
 
+<h2> Professional Background </h2>
+
 <h2> Academic Background </h2>
 <ul>
 <li> <strong> Political Science - Democracy and Elections (MA) </strong> <br>
