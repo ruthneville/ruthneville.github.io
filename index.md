@@ -12,6 +12,6 @@ My research project is based on predicting future demand for UK higher education
   <br>
 My background is in Political Science, and in my spare time I still like to keep up with electoral politics and research on sociological drivers for voting behaviour. </p>
 
-<p> You can find out more about my education and professional experience <a href="education.html">HERE!</a> </p>
+<p> You can find out more about my education and professional experience <a href="https://ruthneville.github.io/education.html">HERE!</a> </p>
 
 <p> My first ever ABM model can be found <a href="https://ruthneville.github.io/ABM.html">HERE!</a> </p>
