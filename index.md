@@ -14,4 +14,5 @@ My background is in Political Science, and in my spare time I still like to keep
 
 <p> You can find out more about my education and professional experience <a href=https://ruthneville.github.io/education.html>HERE!</a> </p>
 
-<p> My ABM model can be found <a href="https://ruthneville.github.io/ABM.html">HERE!</a> </p>
+<p> My first assignment has been to build an agent based model to simulate sheep grazing in a field, more information about this can be found below.<br>
+ My ABM model can be found <a href="https://ruthneville.github.io/ABM.html">HERE!</a> </p>
