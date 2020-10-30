@@ -11,10 +11,10 @@ My background is in Political Science, and in my spare time I still like to keep
 
 <h2> Academic Background </h2>
 <ul>
-<li> **Political Science - Democracy and Elections (MA)**  <br>
+<li> __Political Science - Democracy and Elections (MA)__  <br>
   University of Manchester  <br>
   *2017 - 2018* </li>
-<li> **Philosophy, Politics, and Economics (BA)** <br>
+<li> __Philosophy, Politics, and Economics (BA)__ <br>
   Lancaster University  <br>
   *2013 - 2016* </li>  
 </ul>
