@@ -1,7 +1,7 @@
 ---
 title: Welcome to Ruth Neville's GitHub
 ---
-![University of Liverpool](https://user-images.githubusercontent.com/71274167/97724887-6af12480-1ac5-11eb-823c-687199a9b36e.png)
+![University of Liverpool](https://user-images.githubusercontent.com/71274167/97724887-6af12480-1ac5-11eb-823c-687199a9b36e.png) 
 
 <h1> Ruth Neville's GitHub </h1>
 
