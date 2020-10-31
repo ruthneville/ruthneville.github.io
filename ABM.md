@@ -27,3 +27,8 @@ title: ABM
 <h2> References </h2>
 
 Crooks A.T., Heppenstall A.J. (2012) Introduction to Agent-Based Modelling. In: Heppenstall A., Crooks A., See L., Batty M. (eds) Agent-Based Models of Geographical Systems. Springer, Dordrecht.
+
+<br>
+<br>
+
+<p><a href="https://ruthneville.github.io/">Head back to the homepage!</a> </p>
