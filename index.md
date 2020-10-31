@@ -15,3 +15,5 @@ My background is in Political Science, and in my spare time I still like to keep
 <p> You can find out more about my education and professional experience <a href="https://ruthneville.github.io/education.html">here!</a> </p>
 
 <p> Details of my first ever ABM model can be found <a href="https://ruthneville.github.io/ABM.html">here!</a> </p>
+
+<p> To find out a bit more about how I made this site click <a href="https://ruthneville.github.io/about.html">here!</a> </p>
