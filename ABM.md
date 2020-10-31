@@ -15,7 +15,7 @@ title: Welcome to Ruth Neville's GitHub
 
 <p> I was successful in creating a model which simulated sheep grazing in an environment with other sheep, with each sheep being aware of others around them and only eating until their stomach's were full. I was able to animate the model. Please see the below static image of the output, which I would ideally present animated here!</p>
 
-                   ![image](https://user-images.githubusercontent.com/71274167/97779264-cd552e00-1b74-11eb-9b34-189d01bf59c3.png)
+![image](https://user-images.githubusercontent.com/71274167/97779264-cd552e00-1b74-11eb-9b34-189d01bf59c3.png)
 
 
 
