@@ -19,7 +19,7 @@ title: Welcome to Ruth Neville's GitHub
 
 <p> Each hexagon represents a sheep, and the blue/green background is the environment. Where there is markings in the environment represent where the sheep have grazed. When the model animates, you can see that it stops when the stopping condition comes into force as it is unrealistic that sheep would go on grazing forever and ever. </p>
 
-<p> Please refer to <a href="https://github.com/ruthneville/Practical-1-Agent-Based-Model">" my GitHub repository </a> and "Practical 1 Agent Based Model" for the final code of the Agent and the Model that ran successfully - Agent Framework.py and Final Model - Animation Practical.py. The repository also includes a ReadMe file and a license agreement. I am open to feedback on the model on how it can be made more efficient. </p>
+<p> Please refer to <a href="https://github.com/ruthneville/Practical-1-Agent-Based-Model"> my GitHub repository </a> and "Practical 1 Agent Based Model" for the final code of the Agent and the Model that ran successfully - Agent Framework.py and Final Model - Animation Practical.py. The repository also includes a ReadMe file and a license agreement. I am open to feedback on the model on how it can be made more efficient. </p>
 
 <p> At the time of writing I have not been able to successfully run the GUI practical, but I am going to keep working on this. I will upload the code that I attempted to write to the repository even if it does not fully work as a reference or if anybody has any advice on how to fix it! </p>
 
