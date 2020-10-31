@@ -20,3 +20,5 @@ title: Education and Professional Background
   Lancaster University  <br>
   <em> 2013 - 2016 </em> </li>  
 </ul>
+
+<p> <a "ref=https://ruthneville.github.io/"> Head back to the homepage!</a> </p>
