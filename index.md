@@ -8,10 +8,10 @@ title: Welcome to Ruth Neville's GitHub
 <h2> About Me </h2>
 <p> My name is Ruth Neville and I am a first year CDT student studying towards an MSc and PhD in Data Analytics and Society.<br> 
   <br>
-My research project is based on predicting future demand for UK higher education from international students. My partner is UCAS and I am excited to start working with them.<br>
+My research project is based on predicting future demand for UK higher education from international students and my industry partner is UCAS.<br>
   <br>
-My background is in Political Science, and in my spare time I still like to keep up with electoral politics and research on sociological drivers for voting behaviour. </p>
+My background is in Political Science, and in my spare time I still like to keep up with electoral politics and research on sociological drivers for voting behaviour. I also enjoy video games and reading.</p>
 
-<p> You can find out more about my education and professional experience <a href="https://ruthneville.github.io/education.html">HERE!</a> </p>
+<p> You can find out more about my education and professional experience <a href="https://ruthneville.github.io/education.html">here!</a> </p>
 
-<p> My first ever ABM model can be found <a href="https://ruthneville.github.io/ABM.html">HERE!</a> </p>
+<p> Details of my first ever ABM model can be found <a href="https://ruthneville.github.io/ABM.html">here!</a> </p>
