@@ -7,8 +7,8 @@ title: Welcome to Ruth Neville's GitHub
 
 <h2> Professional Background </h2> 
 <ul>
-  <li> <strong> Assistant Data Analyst </strong> <br>
-    University of Manchester <br>
+  <li> <strong> Data Analyst </strong> <br>
+    University of Manchester, Directorate of Planning <br>
     <em> 2017 - 2019 </em> </li>
   </ul>
 <h2> Academic Background </h2>
