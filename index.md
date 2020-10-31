@@ -4,7 +4,7 @@ title: Welcome to Ruth Neville's GitHub
 ![University of Liverpool](https://user-images.githubusercontent.com/71274167/97724887-6af12480-1ac5-11eb-823c-687199a9b36e.png) ![ESRC](https://user-images.githubusercontent.com/71274167/97725173-c7ecda80-1ac5-11eb-9be1-fa21d09976eb.png)
 
 <h1> Ruth Neville's GitHub </h1> 
-![me](https://user-images.githubusercontent.com/71274167/97781275-16f84580-1b82-11eb-884f-c2097fe479ed.png | width = 250 x 250)
+![me](https://user-images.githubusercontent.com/71274167/97781275-16f84580-1b82-11eb-884f-c2097fe479ed.png | width = "200" height = "400")
 
 <h2> About Me </h2>
 <p> My name is Ruth Neville and I am a first year CDT student studying towards an MSc and PhD in Data Analytics and Society.<br> 
