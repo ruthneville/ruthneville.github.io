@@ -11,7 +11,7 @@ title: About This Site
 
 <p> Click <a href="https://github.com/ruthneville/ruthneville.github.io"> here</a> to view the repository related to this site. </p>
   
-<p> Within the repository you can find the markdown for:<ul>
+<p> Within the repository you can find the markdown for:
   <li> Index (Home) Page </ul>
   <li> Education Page </ul>
   <li> ABM Page </ul>
