@@ -9,11 +9,16 @@ title: About This Site
 
 <p> This GitHub site uses markdown and a Jekyll theme called "Cayman". </p>
 
-<p> Click <a href="https://github.com/ruthneville/ruthneville.github.io"> here to view the repository related to this site. </p>
+<p> Click <a href="https://github.com/ruthneville/ruthneville.github.io"> here</a> to view the repository related to this site. </p>
   
 <p> Within the repository you can find the markdown for:<br><ul>
   <li> Index (Home) Page </ul>
   <li> Education Page </ul>
   <li> ABM Page </ul>
   <li> About The Site Page (this page) </ul>
-    
+<br>
+<br>
+
+<p><a href="https://ruthneville.github.io/">Head back to the homepage!</a> </p>
+   
+
