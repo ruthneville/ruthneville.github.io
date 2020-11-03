@@ -6,7 +6,7 @@ title: Welcome to Ruth Neville's GitHub
 <h1> Ruth Neville's GitHub </h1> 
 
 <h2> About Me </h2>
-<p> My name is Ruth Neville and I am a first year <a href="https://datacdt.org/" CDT </a> student studying towards an MSc and PhD in Data Analytics and Society.<br> 
+<p> My name is Ruth Neville and I am a first year <a href="https://datacdt.org/"> CDT </a> student studying towards an MSc and PhD in Data Analytics and Society.<br> 
   <br>
 My research project is based on predicting future demand for UK higher education from international students and my industry partner is UCAS.<br>
   <br>
