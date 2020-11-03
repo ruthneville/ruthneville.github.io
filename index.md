@@ -17,5 +17,5 @@ My background is in Political Science, and in my spare time I still like to keep
 <p> Find out more about about <a href="https://ruthneville.github.io/about.html">how I made this site </a> </p>
 
 <h2> Programming Projects </h2>
-<h3> GEOG5995M Programming for Social Science Core Skills: Assignment 1 </h3>
+<h4> GEOG5995M Programming for Social Science Core Skills: Assignment 1 </h4>
 <p> Details of my first ever ABM model can be found <a href="https://ruthneville.github.io/ABM.html">here!</a> </p>
