@@ -12,10 +12,9 @@ My research project is based on predicting future demand for UK higher education
   <br>
 My background is in Political Science, and in my spare time I still like to keep up with electoral politics and research on sociological drivers for voting behaviour. I also enjoy video games and reading.</p>
 
-<p> Find out more about <a href="https://ruthneville.github.io/education.html">my education and professional experience.</a> </p>
+<p> <a href="https://ruthneville.github.io/education.html">Find out more about my education and professional experience.</a> </p>
 
-<p> Find out more about about <a href="https://ruthneville.github.io/about.html">how I made this site </a> </p>
+<p> <a href="https://ruthneville.github.io/about.html">Find out more about how I made this site </a> </p>
 
 <h2> Programming Projects </h2>
-<h4> GEOG5995M Programming for Social Science Core Skills: Assignment 1 </h4>
-<p> Details of my first ever ABM model can be found <a href="https://ruthneville.github.io/ABM.html">here!</a> </p>
+<h4> <a href="https://ruthneville.github.io/ABM.html"> GEOG5995M Programming for Social Science Core Skills: Assignment 1> </a> </h4> 
