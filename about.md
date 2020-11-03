@@ -12,10 +12,10 @@ title: About This Site
 <p> Click <a href="https://github.com/ruthneville/ruthneville.github.io"> here</a> to view the repository related to this site. </p>
   
 <p> Within the repository you can find the markdown for:
-  <li> Index (Home) Page </ul>
-  <li> Education Page </ul>
-  <li> ABM Page </ul>
-  <li> About The Site Page (this page) </ul>
+  <li> Index (Home) Page </li>
+  <li> Education Page </li>
+  <li> ABM Page </li>
+  <li> About The Site Page (this page) </li>
 <br>
 <br>
 
