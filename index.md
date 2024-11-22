@@ -2,7 +2,6 @@
 title: Ruth Neville Webpage
 ---
 
-# Ruth Neville  
 _PhD Candidate, Geographic Data Science_  
 _University of Liverpool_
 
