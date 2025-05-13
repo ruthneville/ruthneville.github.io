@@ -1,7 +1,6 @@
 ---
 title: Ruth Neville Personal Websitee
 layout: default
-description: Personal academic website of Ruth Smith
 ---
 
   <header>
