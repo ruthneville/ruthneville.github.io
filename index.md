@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ruth Smith
+title: Ruth Neville
 ---
 
 # Hi, I'm Ruth Neville
