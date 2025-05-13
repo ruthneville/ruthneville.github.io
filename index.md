@@ -3,7 +3,7 @@ layout: splash
 title: "Home"
 author_profile: false
 header:
-  image: "https://images.unsplash.com/photo-1531501410728-4c519a701524?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+  image: "/assets/img/banner_2.jpg"
   overlay_color: "#000"
   overlay_filter: "0.3"
 ---
