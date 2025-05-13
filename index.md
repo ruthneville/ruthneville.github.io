@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "Home"
-author_profile: true
+author_profile: false
 ---
 
 Welcome! I’m **Ruth**, a spatial data scientist specialising in international student mobility, high-skilled migration, and forecasting. My research explores how socio-political and economic shocks shape population movement, with a particular focus on international student flows to the UK.
