@@ -4,7 +4,6 @@ title: "Home"
 author_profile: false
 header:
   image: "/assets/img/banner_2.jpg"
-  min_height: "20vh"
 ---
 
 THIS WEBSITE IS UNDER CONSTRUCTION
