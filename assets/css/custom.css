@@ -1,6 +1,6 @@
 /* Custom styles for header */
 #header {
-  height: 200px;  /* Adjust the height of the banner */
+  height: 50px;  /* Adjust the height of the banner */
   background-image: url('/assets/img/banner_2.jpg');  /* Explicitly set the image */
   background-size: cover; /* Ensure the image covers the entire area */
   background-position: center center; /* Center the image */
