@@ -1,7 +1,9 @@
 /* Custom styles for header */
 #header {
-  min-height: 100px;  /* Adjust height for the banner */
-  background-size: cover;
-  background-position: center center;
+  height: 200px;  /* Adjust the height of the banner */
+  background-image: url('/assets/img/banner_2.jpg');  /* Explicitly set the image */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image tiling */
 }
 
