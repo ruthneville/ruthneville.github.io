@@ -3,7 +3,7 @@ layout: single
 title: "Home"
 author_profile: false
 header:
-  image: "/assets/img/banner_2.jpg"
+  image: https://unsplash.com/photos/green-yellow-and-red-abstract-painting-5Oe8KFH5998.jpg
 classes: wide
 ---
 
