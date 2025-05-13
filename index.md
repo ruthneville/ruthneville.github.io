@@ -3,8 +3,7 @@ layout: single
 title: "Home"
 author_profile: true
 header:
-overlay_colour: '#333'
-classes: wide
+  overlay_colour: '#333'
 ---
 
 THIS WEBSITE IS UNDER CONSTRUCTION
