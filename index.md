@@ -1,7 +1,11 @@
 ---
-layout: home
+layout: splash
 title: "Home"
 author_profile: false
+header:
+  image: /assets/img/banner_2.jpg
+  overlay_color: "#000"
+  overlay_filter: "0.3"
 ---
 
 Welcome! I’m **Ruth**, a spatial data scientist specialising in international student mobility, high-skilled migration, and forecasting. My research explores how socio-political and economic shocks shape population movement, with a particular focus on international student flows to the UK.
