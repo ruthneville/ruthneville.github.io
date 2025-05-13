@@ -1,13 +1,28 @@
-title: Ruth Neville
-description: Academic website of Ruth Neville
-remote_theme: pages-themes/tactile@v0.2.0
+title: "Ruth Neville"
+description: "Spatial Data Scientist | Migration & Mobility | Forecasting"
+baseurl: "" # leave empty if using your root domain
+url: "https://ruthneville.github.io" # change to your GitHub Pages URL
+
+remote_theme: "mmistakes/minimal-mistakes@4.27.1"
 
 plugins:
-  - jekyll-remote-theme
+  - jekyll-include-cache
 
-# Optional
-author: Ruth Neville
-email: your.email@example.com
-logo: /assets/img/photo.jpg
-show_downloads: false
-google_analytics: # UA-XXXXXXXXX-X
+# Author details
+author:
+  name: "Ruth Neville"
+#  avatar: "/assets/images/photo.jpg"
+  bio: "Postdoctoral Researcher | International Student Mobility & High-skilled Migration"
+  location: "London, UK"
+  email: "ruth.neville@ucl.ac.uk"
+
+# Optional navigation (edit as needed)
+nav:
+  - title: "About"
+    url: /about/
+  - title: "Publications"
+    url: /publications/
+  - title: "CV"
+    url: /cv/
+
+# Google Analytics etc. can be added later
