@@ -1,5 +1,5 @@
 ---
-title: Ruth Neville Personal Websitee
+title: Ruth Neville
 layout: default
 ---
 
