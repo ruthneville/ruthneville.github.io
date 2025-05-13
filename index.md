@@ -1,10 +1,9 @@
 ---
 layout: single
 title: "Home"
-author_profile: false
+author_profile: true
 header:
-  image: "https://images.unsplash.com/photo-1523895665936-7bfe172b757d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  min_height: "20vh"
+overlay_colour: '#333'
 classes: wide
 ---
 
