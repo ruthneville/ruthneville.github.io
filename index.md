@@ -3,7 +3,8 @@ layout: single
 title: "Home"
 author_profile: true
 header:
-  image:  "/assets/img/banner_2.jpg"  # Leave this empty for no image
+  image:  ""  # Leave this empty for no image
+  overlay_colour: '#333'
   overlay_filter: "0.3"  # Optional: use this to adjust the opacity of the overlay
   min_height: "150px"  # Optional: adjust height of the header as needed
 ---
