@@ -4,7 +4,6 @@ layout: default
 ---
 
   <header>
-    <h1>Your Name</h1>
     <p>Researcher | Data Scientist | [Add your tagline]</p>
   </header>
 
