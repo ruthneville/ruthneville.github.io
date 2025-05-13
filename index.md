@@ -4,6 +4,7 @@ title: "Home"
 author_profile: false
 header:
   image: "/assets/img/banner_2.jpg"
+classes: wide
 ---
 
 THIS WEBSITE IS UNDER CONSTRUCTION
