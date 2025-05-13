@@ -3,7 +3,10 @@ layout: single
 title: "Home"
 author_profile: true
 header:
-  overlay_colour: '#333'
+  image: ""  # Leave this empty for no image
+  overlay_color: "#333"  # Optional: use this for a dark overlay color if you want
+  overlay_filter: "0.3"  # Optional: use this to adjust the opacity of the overlay
+  min_height: "150px"  # Optional: adjust height of the header as needed
 ---
 
 THIS WEBSITE IS UNDER CONSTRUCTION
