@@ -1,0 +1,7 @@
+/* Custom styles for header */
+#header {
+  min-height: 300px;  /* Adjust height for the banner */
+  background-size: cover;
+  background-position: center center;
+}
+This will make the head
