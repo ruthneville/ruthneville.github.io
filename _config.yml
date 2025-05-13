@@ -8,11 +8,6 @@ remote_theme: "mmistakes/minimal-mistakes@4.27.1"
 plugins:
   - jekyll-include-cache
 
-# Add the path to your custom stylesheet
-css:
-  - "/assets/css/custom.css"
-  
-  
 # Author details
 author:
   name: "Ruth Neville"
