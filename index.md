@@ -4,7 +4,7 @@ layout: default
 ---
 
   <header>
-    <p>Researcher | Data Scientist | [Add your tagline]</p>
+    Researcher | Data Scientist | [Add your tagline]
   </header>
 
   <main>
