@@ -5,7 +5,7 @@ author_profile: false
 header:
   image: "/assets/img/banner_2.jpg"
   overlay_color: "#000"
-  overlay_filter: "0.3"
+  overlay_filter: "0.1"
 ---
 
 
