@@ -1,41 +1,25 @@
 ---
-title: Ruth Neville
 layout: default
+title: Ruth Smith
 ---
 
-  <header>
-    Researcher | Data Scientist | [Add your tagline]
-  </header>
+# Hi, I'm Ruth Neville
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I'm a [your role], currently based in [location]. I work on [brief research focus or expertise].
-        My research focuses on [1–2 sentence summary].
-      </p>
-    </section>
+I'm a spatial data scientist focused on international student mobility, migration, and forecasting. I recently completed my PhD at [Your University], where I studied...
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>PhD Thesis:</strong> <em>From Past Patterns to Future Prospects: Understanding International Student Applications in UK Higher Education</em></li>
-        <li><strong>Forecasting Work:</strong> Paper on international student mobility forecasting (under review at PNAS)</li>
-        <li><strong>COVID-19 & Migration:</strong> Co-authored piece on COVID-era migration published in <em>Migration Policy Practice</em></li>
-      </ul>
-    </section>
+## 🧠 Research Interests
+- International student mobility
+- Migration and crisis resilience
+- Forecasting & spatial modelling
+- High-skilled migration
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br>
-      GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a><br>
-      LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
-    </section>
-  </main>
+## 📄 Publications
+- **From Past Patterns to Future Prospects** (PhD thesis)
+- [Forecasting international student applications (PNAS preprint)](link-here)
+- Gender and COVID-19 impacts on mobility (*Migration Policy Practice*, 2025)
 
-  <footer>
-    &copy; 2025 Your Name. All rights reserved.
-  </footer>
+## ✉️ Contact
+- Email: [your.email@example.com](mailto:your.email@example.com)  
+- GitHub: [github.com/yourusername](https://github.com/yourusername)  
+- LinkedIn: [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername)
 
-</body>
-</html>
