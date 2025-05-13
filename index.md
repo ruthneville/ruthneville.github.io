@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Home"
-author_profile: true
+author_profile: false
 header:
   image:"https://source.unsplash.com/1600x900/?data,mobility"
 ---
