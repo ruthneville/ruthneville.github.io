@@ -1,0 +1,6 @@
+/* Custom styles for single layout header */
+#header {
+  min-height: 300px; /* Adjust the height for the banner */
+  background-size: cover;
+  background-position: center center;
+}
