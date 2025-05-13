@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: single
 title: "Home"
 author_profile: false
 header:
