@@ -11,9 +11,7 @@ header:
 
 THIS WEBSITE IS UNDER CONSTRUCTION
 
-Welcome! I’m **Ruth**, a spatial data scientist specialising in international student mobility, high-skilled migration, and forecasting. My research explores how socio-political and economic shocks shape population movement, with a particular focus on international student flows to the UK.
-
-I recently completed my PhD at [University Name] and am now a postdoctoral researcher at [UCL's Centre for Advanced Spatial Analysis](https://www.ucl.ac.uk/bartlett/casa), .... 
+Welcome! I’m **Ruth**, a spatial data scientist specialising in international student mobility. Ruth Neville is a doctoral researcher at the Geographic Data Science Lab at the University of Liverpool. Her research focuses on understanding and modelling human mobility, with a particular emphasis on international student mobility to the UK and the dynamics of mobility during times of crisis and in response to policy changes.
 
 ---
 
@@ -21,7 +19,6 @@ I recently completed my PhD at [University Name] and am now a postdoctoral resea
 
 - International student mobility and high-skilled migration  
 - Spatial modelling and forecasting  
-- Migration decision-making and development  
 - Policy impacts on mobility during crises (e.g. COVID-19, Brexit)
 
 ---
