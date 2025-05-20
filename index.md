@@ -23,14 +23,6 @@ My research focuses on understanding and mdoelling human mobility, with a partic
 
 ---
 
-## Updates
-
-- _April 2025_: Submitted PhD on student mobility forecasting  
-- _March 2025_: Published new work in *Migration Policy Practice*  
-- _Coming soon_: Preprint on pandemic-related migration slowdowns
-
----
-
 ## Find out more
 
 - [About](/about/)  
