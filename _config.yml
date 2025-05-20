@@ -12,7 +12,7 @@ plugins:
 author:
   name: "Ruth Neville"
 #  avatar: "/assets/images/photo.jpg"
-  bio:  "Spatial Data Scientist | Migration & Mobility | Computational Social Science"
+  bio:  "Spatial Data Scientist | Migration & Mobility"
   location: "London, UK"
   email: "ruth.neville@ucl.ac.uk"
 
