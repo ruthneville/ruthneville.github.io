@@ -66,7 +66,18 @@
 
     /* Cards */
     section { margin-top: 2rem; }
-    .card { background: color-mix(in oklab, var(--card) 92%, transparent); border: 1px solid rgba(148,163,184,.18); box-shadow: 0 10px 30px var(--shadow); border-radius: 1.25rem; padding: 1.25rem; }
+    .card { 
+      background: color-mix(in oklab, var(--card) 92%, transparent); 
+      border: 1px solid rgba(148,163,184,.18); 
+      box-shadow: 0 10px 30px var(--shadow); 
+      border-radius: 1.25rem; 
+      padding: 1.25rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px var(--shadow);
+    }
     .card h2 { margin-top: 0; font-size: 1.25rem; }
 
     /* Lists */
@@ -75,16 +86,63 @@
     .pub { margin: 0; }
     .pub li { margin-bottom: .9rem; }
     .tags { display: inline-flex; gap: .35rem; flex-wrap: wrap; }
-    .tag { font-size: .75rem; background: rgba(56,189,248,.15); border: 1px solid rgba(56,189,248,.35); color: var(--text); padding: .1rem .45rem; border-radius: .5rem; }
+    .tag { 
+      font-size: .75rem; 
+      background: rgba(56,189,248,.15); 
+      border: 1px solid rgba(56,189,248,.35); 
+      color: var(--text); 
+      padding: .1rem .45rem; 
+      border-radius: .5rem;
+      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+      cursor: pointer;
+    }
+    .tag:hover {
+      transform: scale(1.1);
+      background: var(--accent);
+      color: #fff;
+    }
 
     /* Footer */
     footer { margin: 3rem 0 2rem; color: var(--muted); font-size: .95rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 
     /* Utilities */
     .pill { display: inline-flex; align-items: center; gap: .5rem; border: 1px solid rgba(148,163,184,.25); padding: .35rem .6rem; border-radius: 999px; background: rgba(148,163,184,.10); }
-    .btn { display: inline-block; padding: .55rem .9rem; border-radius: .9rem; border: 1px solid rgba(148,163,184,.25); background: linear-gradient(180deg, color-mix(in oklab, var(--card) 95%, transparent), color-mix(in oklab, var(--card) 75%, transparent)); box-shadow: 0 8px 20px var(--shadow); }
-    .btn:hover { filter: brightness(1.05); text-decoration: none; }
+    .btn { 
+      display: inline-block; 
+      padding: .55rem .9rem; 
+      border-radius: .9rem; 
+      border: 1px solid rgba(148,163,184,.25); 
+      background: linear-gradient(180deg, color-mix(in oklab, var(--card) 95%, transparent), color-mix(in oklab, var(--card) 75%, transparent)); 
+      box-shadow: 0 8px 20px var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    }
+    .btn:hover { 
+      filter: brightness(1.05); 
+      text-decoration: none;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 25px var(--shadow);
+    }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+    
+    /* Animations */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    
+    /* Apply floating animation to SVG circles */
+    svg circle {
+      animation: float 6s ease-in-out infinite;
+    }
+    
+    /* Stagger the animation timing for different circles */
+    svg circle:nth-child(odd) {
+      animation-delay: -2s;
+    }
+    svg circle:nth-child(even) {
+      animation-delay: -4s;
+    }
   </style>
 </head>
 <body>
