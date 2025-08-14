@@ -1,8 +1,5 @@
 
 ---
-layout: home
-title: "Home"
-author_profile = true
+layout: redirect
+redirect_to: "/about/"
 ---
-
-Welcome to my site! This is the homepage.
