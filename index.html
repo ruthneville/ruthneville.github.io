@@ -15,25 +15,25 @@
   <style>
     /* Base */
     :root {
-      --bg: #0b1020;
-      --muted: #94a3b8;
-      --text: #e2e8f0;
-      --card: #11172a;
-      --accent: #38bdf8;
-      --accent-2: #a78bfa;
-      --link: #7dd3fc;
-      --shadow: rgba(2,8,23,.4);
+  --bg: #e6d6f7; /* lilac */
+  --muted: #6c3483; /* muted purple */
+  --text: #2d014d; /* dark purple */
+  --card: #f3eafd; /* light lilac for cards */
+  --accent: #a78bfa; /* accent lilac */
+  --accent-2: #c084fc; /* accent purple */
+  --link: #6c3483; /* dark purple for links */
+  --shadow: rgba(44,1,77,.10); /* purple shadow */
     }
     @media (prefers-color-scheme: light) {
       :root {
-        --bg: #f8fafc;
-        --muted: #475569;
-        --text: #0f172a;
+        --bg: #f3eafd; /* lighter lilac for light mode */
+        --muted: #6c3483;
+        --text: #2d014d;
         --card: #ffffff;
-        --accent: #0ea5e9;
-        --accent-2: #7c3aed;
-        --link: #0284c7;
-        --shadow: rgba(2,8,23,.10);
+        --accent: #a78bfa;
+        --accent-2: #c084fc;
+        --link: #6c3483;
+        --shadow: rgba(44,1,77,.07);
       }
     }
     * { box-sizing: border-box; }
@@ -41,10 +41,10 @@
     body {
   font-family: 'Roboto Condensed', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
       line-height: 1.6;
-      color: var(--text);
-      background: radial-gradient(1200px 700px at 20% -10%, rgba(56,189,248,.15), transparent 50%),
-                  radial-gradient(1000px 500px at 120% 10%, rgba(167,139,250,.15), transparent 50%),
-                  var(--bg);
+  color: var(--text);
+  background: radial-gradient(1200px 700px at 20% -10%, rgba(167,139,250,.18), transparent 50%),
+      radial-gradient(1000px 500px at 120% 10%, rgba(167,139,250,.12), transparent 50%),
+      var(--bg);
     }
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
@@ -90,7 +90,7 @@
 <body>
   <header>
     <div class="container nav" role="navigation" aria-label="Primary">
-      <a href="#top" class="brand">Your Name</a>
+      <a href="#top" class="brand">Ruth Neville</a>
       <nav class="menu" aria-label="Sections">
         <a href="#about">About</a>
         <a href="#research">Research</a>
