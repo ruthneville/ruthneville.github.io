@@ -131,17 +131,34 @@
       100% { transform: translateY(0px); }
     }
     
-    /* Apply floating animation to SVG circles */
-    svg circle {
+    @keyframes floatSlow {
+      0% { transform: translateY(0px) translateX(0px); }
+      33% { transform: translateY(-8px) translateX(2px); }
+      66% { transform: translateY(5px) translateX(-1px); }
+      100% { transform: translateY(0px) translateX(0px); }
+    }
+    
+    /* Apply floating animation to background SVG circles */
+    div[style*="position:fixed"] svg circle {
       animation: float 6s ease-in-out infinite;
     }
     
     /* Stagger the animation timing for different circles */
-    svg circle:nth-child(odd) {
+    div[style*="position:fixed"] svg circle:nth-of-type(1) {
+      animation: float 8s ease-in-out infinite;
+      animation-delay: 0s;
+    }
+    div[style*="position:fixed"] svg circle:nth-of-type(2) {
+      animation: floatSlow 10s ease-in-out infinite;
       animation-delay: -2s;
     }
-    svg circle:nth-child(even) {
+    div[style*="position:fixed"] svg circle:nth-of-type(3) {
+      animation: float 7s ease-in-out infinite;
       animation-delay: -4s;
+    }
+    div[style*="position:fixed"] svg circle:nth-of-type(4) {
+      animation: floatSlow 9s ease-in-out infinite;
+      animation-delay: -6s;
     }
   </style>
 </head>
@@ -154,8 +171,6 @@
       <polygon points="1440,0 1040,0 1440,400" fill="#e6d6f7" opacity="0.55"/>
       <polygon points="0,900 400,900 0,500" fill="#e6d6f7" opacity="0.55"/>
       <polygon points="1440,900 1040,900 1440,500" fill="#e6d6f7" opacity="0.55"/>
-      <!-- Central hexagon -->
-      <polygon points="720,300 780,350 780,420 720,470 660,420 660,350" fill="#e6d6f7" opacity="0.45"/>
       <!-- Diagonal lines -->
       <polyline points="0,0 1440,900" stroke="#e6d6f7" stroke-width="12" opacity="0.32"/>
       <polyline points="1440,0 0,900" stroke="#e6d6f7" stroke-width="12" opacity="0.32"/>
