@@ -88,6 +88,19 @@
   </style>
 </head>
 <body>
+  <!-- Geometric SVG Background Overlay -->
+  <div style="position:fixed; inset:0; z-index:-1; pointer-events:none;">
+    <svg width="100%" height="100%" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100vw; height:100vh;">
+      <polygon points="0,0 400,0 0,400" fill="#f7f3fd" opacity="0.7"/>
+      <polygon points="1440,0 1040,0 1440,400" fill="#f7f3fd" opacity="0.7"/>
+      <polygon points="0,900 400,900 0,500" fill="#f7f3fd" opacity="0.7"/>
+      <polygon points="1440,900 1040,900 1440,500" fill="#f7f3fd" opacity="0.7"/>
+      <polygon points="720,0 820,200 620,200" fill="#f7f3fd" opacity="0.5"/>
+      <polygon points="720,900 820,700 620,700" fill="#f7f3fd" opacity="0.5"/>
+      <polyline points="0,450 1440,450" stroke="#f7f3fd" stroke-width="18" opacity="0.2"/>
+      <polyline points="720,0 720,900" stroke="#f7f3fd" stroke-width="18" opacity="0.2"/>
+    </svg>
+  </div>
   <header>
     <div class="container nav" role="navigation" aria-label="Primary">
       <a href="#top" class="brand">Ruth Neville</a>
