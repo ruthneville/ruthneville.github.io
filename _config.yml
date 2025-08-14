@@ -1,3 +1,10 @@
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: home
+
 
 title: "Ruth Neville"
 tagline: "Data scientist & geographer — international student mobility, forecasting, GIS"
