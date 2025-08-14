@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ruth Neville — Academic Homepage</title>
   <meta name="description" content="Academic homepage of Ruth Neville: research, publications, teaching, talks, and contact." />
-  <meta property="og:title" content="Ruth Neville — Academic Homepage" />
+  <meta property="og:title" content="Ruth Neville PhD" />
   <meta property="og:description" content="Research, publications,and contact." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0f172a" />
@@ -200,6 +200,47 @@
       <circle cx="1240" cy="700" r="35" fill="#e0e0f0" opacity="0.25"/>
       <circle cx="900" cy="500" r="25" fill="#e0e0f0" opacity="0.25"/>
       <circle cx="500" cy="800" r="18" fill="#e0e0f0" opacity="0.25"/>
+    </svg>
+  </div>
+
+  <!-- Network or Mobility Flows Background -->
+  <div style="position:fixed; inset:0; z-index:-1; pointer-events:none;">
+    <svg width="100%" height="100%" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100vw; height:100vh;">
+      <!-- Nodes -->
+      <circle cx="720" cy="450" r="10" fill="#6c3483" /> <!-- Central node -->
+      <circle cx="300" cy="200" r="6" fill="#a78bfa" /> <!-- Node -->
+      <circle cx="1100" cy="300" r="6" fill="#a78bfa" /> <!-- Node -->
+      <circle cx="500" cy="700" r="6" fill="#a78bfa" /> <!-- Node -->
+      <circle cx="900" cy="600" r="6" fill="#a78bfa" /> <!-- Node -->
+
+      <!-- Flows -->
+      <path d="M720,450 Q500,300 300,200" stroke="url(#gradientFlow)" stroke-width="2" fill="none" />
+      <path d="M720,450 Q900,400 1100,300" stroke="url(#gradientFlow)" stroke-width="2" fill="none" />
+      <path d="M720,450 Q600,600 500,700" stroke="url(#gradientFlow)" stroke-width="2" fill="none" />
+      <path d="M720,450 Q800,500 900,600" stroke="url(#gradientFlow)" stroke-width="2" fill="none" />
+
+      <!-- Gradient Definition -->
+      <defs>
+        <linearGradient id="gradientFlow" x1="0" y1="0" x2="1" y2="1" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#a78bfa" />
+          <stop offset="100%" stop-color="#6c3483" />
+        </linearGradient>
+      </defs>
+
+      <!-- Animated Flows -->
+      <style>
+        path {
+          stroke-dasharray: 300;
+          stroke-dashoffset: 300;
+          animation: flowAnimation 3s linear infinite;
+        }
+
+        @keyframes flowAnimation {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+      </style>
     </svg>
   </div>
 
