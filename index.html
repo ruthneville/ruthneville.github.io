@@ -5,7 +5,7 @@
   <!-- Google Fonts: Roboto Condensed -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ruth Neville — Academic Homepage</title>
+  <title>Ruth Neville, PhD </title>
   <meta name="description" content="Academic homepage of Ruth Neville: research, publications, teaching, talks, and contact." />
   <meta property="og:title" content="Ruth Neville PhD" />
   <meta property="og:description" content="Research, publications,and contact." />
@@ -194,6 +194,11 @@
       <circle cx="1200" cy="500" r="6" fill="#c084fc" /> <!-- Node -->
       <circle cx="600" cy="150" r="6" fill="#c084fc" /> <!-- Node -->
       <circle cx="800" cy="750" r="6" fill="#c084fc" /> <!-- Node -->
+      <!-- Additional Nodes for Complexity -->
+      <circle cx="100" cy="300" r="4" fill="#c084fc" opacity="0.7" /> <!-- Node -->
+      <circle cx="1300" cy="400" r="4" fill="#c084fc" opacity="0.7" /> <!-- Node -->
+      <circle cx="400" cy="800" r="4" fill="#c084fc" opacity="0.7" /> <!-- Node -->
+      <circle cx="1000" cy="100" r="4" fill="#c084fc" opacity="0.7" /> <!-- Node -->
 
       <!-- Flows -->
       <path d="M720,450 Q500,300 300,200" stroke="url(#gradientFlow)" stroke-width="2" fill="none" />
@@ -204,6 +209,11 @@
       <path d="M720,450 Q1000,550 1200,500" stroke="url(#gradientFlow2)" stroke-width="2" fill="none" />
       <path d="M720,450 Q650,200 600,150" stroke="url(#gradientFlow2)" stroke-width="2" fill="none" />
       <path d="M720,450 Q850,700 800,750" stroke="url(#gradientFlow2)" stroke-width="2" fill="none" />
+      <!-- Additional Flows for Complexity -->
+      <path d="M720,450 Q200,250 100,300" stroke="url(#gradientFlow3)" stroke-width="1.5" fill="none" opacity="0.6" />
+      <path d="M720,450 Q1300,450 1300,400" stroke="url(#gradientFlow3)" stroke-width="1.5" fill="none" opacity="0.6" />
+      <path d="M720,450 Q400,900 400,800" stroke="url(#gradientFlow3)" stroke-width="1.5" fill="none" opacity="0.6" />
+      <path d="M720,450 Q1100,50 1000,100" stroke="url(#gradientFlow3)" stroke-width="1.5" fill="none" opacity="0.6" />
 
       <!-- Gradient Definitions -->
       <defs>
@@ -215,6 +225,11 @@
           <stop offset="0%" stop-color="#c084fc" />
           <stop offset="100%" stop-color="#6c3483" />
         </linearGradient>
+        <!-- Additional Gradient Definition for Fainter Lines -->
+        <linearGradient id="gradientFlow3" x1="0" y1="0" x2="1" y2="1" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#c084fc" stop-opacity="0.5" />
+          <stop offset="100%" stop-color="#6c3483" stop-opacity="0.5" />
+        </linearGradient>
       </defs>
 
       <!-- Animated Flows -->
@@ -225,11 +240,11 @@
           animation: flowAnimation 3s linear infinite;
         }
 
-        path:nth-of-type(5) {
+        path:nth-of-type(9) {
           animation: flowAnimationReverse 4s linear infinite;
         }
 
-        path:nth-of-type(6) {
+        path:nth-of-type(10) {
           animation: flowAnimation 5s ease-in-out infinite;
         }
 
