@@ -1,0 +1,12 @@
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav class="menu" aria-label="Primary navigation">
+      {% for item in site.nav %}
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {% endfor %}
+      <button class="pill" data-toggle-theme aria-label="Toggle theme">🌓<span class="small" style="margin-left:.35rem;">Theme</span></button>
+    </nav>
+  </div>
+</header>

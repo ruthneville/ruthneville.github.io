@@ -1,28 +1,54 @@
+
 title: "Ruth Neville"
-description: "Spatial Data Scientist | Migration & Mobility | Forecasting"
-baseurl: "" # leave empty if using your root domain
-url: "https://ruthneville.github.io" # change to your GitHub Pages URL
-
-remote_theme: "mmistakes/minimal-mistakes@4.27.1"
-
-plugins:
-  - jekyll-include-cache
-
-# Author details
+tagline: "Data scientist & geographer — international student mobility, forecasting, GIS"
+url: "" # set to your custom domain without trailing slash, e.g. https://ruthneville.uk
+baseurl: "" # leave empty for user/organisation site
 author:
   name: "Ruth Neville"
-#  avatar: "/assets/images/photo.jpg"
-  bio:  "Spatial Data Scientist | Migration & Mobility"
-  location: "London, UK"
-  email: "ruth.neville@ucl.ac.uk"
+  email: "you@university.ac.uk"
+  orcid: ""
+  scholar: ""
+  github: "ruthneville" # change to your handle
+  twitter: ""
+  bluesky: ""
+  linkedin: ""
 
-# Optional navigation (edit as needed)
+theme: null
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections (optional future blog)
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Navigation
 nav:
-  - title: "About"
-    url: /about/
-  - title: "Publications"
-    url: /publications/
-  - title: "CV"
-    url: /cv/
+  - title: Home
+    url: /
+  - title: About
+    url: /pages/about/
+  - title: Research
+    url: /pages/research/
+  - title: Publications
+    url: /pages/publications/
+  - title: Teaching
+    url: /pages/teaching/
+  - title: Talks & Media
+    url: /pages/talks/
+  - title: Contact
+    url: /pages/contact/
 
-# Google Analytics etc. can be added later
+# Appearance
+brand_color: "#0ea5e9"
+accent_color: "#7c3aed"
+light_bg: "#f8fafc"
+dark_bg: "#0b1020"

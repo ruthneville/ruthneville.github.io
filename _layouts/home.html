@@ -1,0 +1,55 @@
+
+---
+layout: default
+---
+<section class="grid" aria-labelledby="home-title">
+  <div class="card" style="display:grid; grid-template-columns: 120px 1fr; gap:1rem; align-items:center;">
+    <img src="{{ '/assets/img/avatar.svg' | relative_url }}" alt="Portrait of {{ site.title }}" class="avatar"/>
+    <div>
+      <h1 id="home-title">{{ site.title }}</h1>
+      <p class="small">{{ site.tagline }}</p>
+      <div class="tags" aria-label="Research keywords">
+        <span class="tag">International Student Mobility</span>
+        <span class="tag">Migration</span>
+        <span class="tag">Forecasting</span>
+        <span class="tag">GIS</span>
+      </div>
+      <p style="margin-top:.9rem;">
+        <a class="btn" href="{{ '/pages/contact/' | relative_url }}">Get in touch</a>
+        <a class="btn" href="{{ '/cv.pdf' | relative_url }}">Download CV</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="grid grid-2">
+    <article class="card">
+      <h2>About</h2>
+      <p>I'm a data scientist and geographer interested in mobility, inequality, and policy. I use forecasting, spatial analysis, and transparent, open workflows to understand who moves, when, and why.</p>
+      <p><a href="{{ '/pages/about/' | relative_url }}">Read more →</a></p>
+    </article>
+    <article class="card">
+      <h2>Research</h2>
+      <ul>
+        <li><strong>Forecasting mobility</strong> — from ARIMA &amp; ensembles to uncertainty-aware narratives.</li>
+        <li><strong>Spatial data science</strong> — GIS, reproducible pipelines, and visual analytics.</li>
+        <li><strong>Policy &amp; rhetoric</strong> — how rules and narratives shape student flows.</li>
+      </ul>
+      <p><a href="{{ '/pages/research/' | relative_url }}">Explore themes →</a></p>
+    </article>
+  </div>
+
+  <section class="card">
+    <h2>Selected Publications</h2>
+    <ol reversed>
+      {% for pub in site.data.publications %}
+      <li>
+        <strong>{{ pub.title }}</strong> ({{ pub.year }}).
+        {% if pub.journal %}<em>{{ pub.journal }}</em>.{% endif %}
+        {% if pub.authors %}<br/>Authors: {{ pub.authors }}.{% endif %}
+        {% if pub.links %}<br/>{% for link in pub.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% if forloop.last == false %} · {% endif %}{% endfor %}{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+    <p><a href="{{ '/pages/publications/' | relative_url }}">All publications →</a></p>
+  </section>
+</section>

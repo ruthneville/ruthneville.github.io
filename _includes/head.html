@@ -1,0 +1,11 @@
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}">
+<title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.excerpt | default: site.tagline | strip_html | normalize_whitespace }}">
+{% seo %}
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:wght@700&display=swap');</style>
+<script defer src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+<div class="bg-canvas" aria-hidden="true"></div>
