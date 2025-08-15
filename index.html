@@ -68,11 +68,11 @@
   border: 3px solid rgba(148,163,184,.25);
   background: var(--card);
 }
-    .title { font-size: clamp(2.8rem, 6vw, 4rem); margin: 0 0 .25rem; }
+    .title { font-size: clamp(2.4rem, 5vw, 3.5rem); margin: 0 0 .25rem; }
     .subtitle { 
       margin: 0; 
       color: var(--muted); 
-      font-size: 1.2rem; /* Slightly larger subtitle */
+      font-size: 1rem; /* Reduced subtitle size */
     }
 
     .job-title {
@@ -110,7 +110,11 @@
     /* Lists */
     .grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
     @media (min-width: 800px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
-    .pub { margin: 0; }
+    .pub { 
+      margin: 0; 
+      list-style: none; /* Removed numbers */
+      padding-left: 0; /* Adjusted padding for alignment */
+    }
     .pub li { margin-bottom: .9rem; }
     .tags { display: inline-flex; gap: .35rem; flex-wrap: wrap; }
     .tag { 
