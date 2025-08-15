@@ -185,12 +185,17 @@
     }
 
     .job-info-box {
-  border: 2px solid var(--accent);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background: var(--card);
-  box-shadow: 0 4px 10px var(--shadow);
+  background: color-mix(in oklab, var(--card) 92%, transparent);
+  border: 1px solid rgba(148,163,184,.18);
+  box-shadow: 0 10px 30px var(--shadow);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 1.5rem;
+}
+.job-info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px var(--shadow);
 }
   </style>
 </head>
