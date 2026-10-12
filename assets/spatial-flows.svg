@@ -1,4 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" class="spatial-svg" aria-hidden="true" focusable="false">
+
+      <style>
+        @keyframes network-flow { from { stroke-dashoffset:100; } to { stroke-dashoffset:0; } }
+        .motion-stroke { stroke-dasharray:10 90; stroke-linecap:round; animation:network-flow 6s linear infinite; }
+        @media (prefers-reduced-motion:reduce) { .motion-stroke { animation:none; display:none; } }
+      </style>
       <defs>
         <linearGradient id="arc-grad-flows" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#80caaa" stop-opacity=".65"/><stop offset="55%" stop-color="#1a9776" stop-opacity=".85"/><stop offset="100%" stop-color="#057252" stop-opacity=".8"/></linearGradient>
         <radialGradient id="field-flows"><stop offset="0%" stop-color="#cceada" stop-opacity=".40"/><stop offset="68%" stop-color="#e1f4eb" stop-opacity=".22"/><stop offset="100%" stop-color="#f8fafc" stop-opacity="0"/></radialGradient>
@@ -27,28 +33,28 @@
 <path d="M 10,684 C 360,414 655,644 1080,442" fill="none" stroke="#61b998" stroke-width=".9" opacity=".28"/>
 <path d="M 10,756 C 360,486 655,716 1080,514" fill="none" stroke="#61b998" stroke-width=".9" opacity=".28"/>
 <path d="M 10,828 C 360,558 655,788 1080,586" fill="none" stroke="#61b998" stroke-width=".9" opacity=".28"/><path d="M360,300 Q476.1,269.6 525,160" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.2" stroke-linecap="round" opacity="0.82"/>
-<path d="M360,300 Q476.1,269.6 525,160" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="1.8" opacity="0.37"/>
+<path d="M360,300 Q476.1,269.6 525,160" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="2.8" opacity=".9" style="animation-delay:-0.0s"/>
 <path d="M360,300 Q510.3,227.9 665,290" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.5" stroke-linecap="round" opacity="0.56"/>
 <path d="M360,300 Q519.3,487.2 765,480" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.8" stroke-linecap="round" opacity="0.56"/>
-<path d="M360,300 Q519.3,487.2 765,480" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="1.8" opacity="0.25"/>
+<path d="M360,300 Q519.3,487.2 765,480" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="2.8" opacity=".9" style="animation-delay:-0.75s"/>
 <path d="M525,160 Q623.6,194.2 665,290" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.2" stroke-linecap="round" opacity="0.82"/>
 <path d="M525,160 Q703.0,276.2 905,210" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.5" stroke-linecap="round" opacity="0.56"/>
-<path d="M525,160 Q703.0,276.2 905,210" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="1.8" opacity="0.25"/>
+<path d="M525,160 Q703.0,276.2 905,210" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="2.8" opacity=".9" style="animation-delay:-1.5s"/>
 <path d="M665,290 Q756.8,363.0 765,480" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.8" stroke-linecap="round" opacity="0.56"/>
 <path d="M665,290 Q527.3,365.4 500,520" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.2" stroke-linecap="round" opacity="0.82"/>
-<path d="M665,290 Q527.3,365.4 500,520" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="1.8" opacity="0.37"/>
+<path d="M665,290 Q527.3,365.4 500,520" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="2.8" opacity=".9" style="animation-delay:-2.25s"/>
 <path d="M665,290 Q767.4,197.2 905,210" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.5" stroke-linecap="round" opacity="0.56"/>
 <path d="M765,480 Q622.9,436.4 500,520" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.8" stroke-linecap="round" opacity="0.56"/>
-<path d="M765,480 Q622.9,436.4 500,520" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="1.8" opacity="0.25"/>
+<path d="M765,480 Q622.9,436.4 500,520" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="2.8" opacity=".9" style="animation-delay:-3.0s"/>
 <path d="M765,480 Q775.6,314.2 905,210" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.2" stroke-linecap="round" opacity="0.82"/>
 <path d="M500,520 Q482.8,376.4 360,300" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.5" stroke-linecap="round" opacity="0.56"/>
-<path d="M500,520 Q482.8,376.4 360,300" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="1.8" opacity="0.25"/>
+<path d="M500,520 Q482.8,376.4 360,300" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="2.8" opacity=".9" style="animation-delay:-3.75s"/>
 <path d="M905,210 Q770.7,454.1 500,520" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.8" stroke-linecap="round" opacity="0.56"/>
 <path d="M360,300 Q654.1,385.8 905,210" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.2" stroke-linecap="round" opacity="0.82"/>
-<path d="M360,300 Q654.1,385.8 905,210" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="1.8" opacity="0.37"/>
+<path d="M360,300 Q654.1,385.8 905,210" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="2.8" opacity=".9" style="animation-delay:-4.5s"/>
 <path d="M235,475 Q479.1,161.7 875,130" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.5" stroke-linecap="round" opacity="0.56"/>
 <path d="M280,220 Q536.1,487.5 905,455" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.8" stroke-linecap="round" opacity="0.56"/>
-<path d="M280,220 Q536.1,487.5 905,455" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="1.8" opacity="0.25"/>
+<path d="M280,220 Q536.1,487.5 905,455" class="motion-stroke" pathLength="100" fill="none" stroke="#127856" stroke-width="2.8" opacity=".9" style="animation-delay:-5.25s"/>
 <path d="M440,610 Q467.5,299.5 715,110" fill="none" stroke="url(#arc-grad-flows)" stroke-width="2.2" stroke-linecap="round" opacity="0.82"/><circle cx="366.99" cy="284.53" r="4.5" fill="#178365" opacity="0.65"/>
 <circle cx="366.99" cy="284.53" r="9.5" fill="none" stroke="#178365" stroke-width=".7" opacity=".25"/>
 <circle cx="344.72" cy="227.73" r="1.7" fill="#178365" opacity="0.50"/>
