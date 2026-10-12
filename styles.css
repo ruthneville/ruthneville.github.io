@@ -1,0 +1,210 @@
+/* Ruth Neville — multi-page academic site draft */
+:root { --background:#f8fafc; --text:#243141; --subtle:#586979; --line:#d9e2e8; --green:#17856c; --green-dark:#12644f; --width:900px; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { background:var(--background); color:var(--text); font-family:'Roboto Condensed', 'Arial Narrow', Arial, sans-serif; font-size:18px; line-height:1.62; margin:0; }
+a { color:var(--green-dark); text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:1px; }
+a:hover { color:#073d32; }
+a:focus-visible { outline:2px solid var(--green); outline-offset:4px; }
+.container { max-width:var(--width); margin:0 auto; padding-left:28px; padding-right:28px; }
+.site-header { background:rgba(248,250,252,.96); border-bottom:1px solid var(--line); }
+.header-inner { display:flex; justify-content:space-between; align-items:center; column-gap:28px; row-gap:8px; padding-top:17px; padding-bottom:17px; }
+.wordmark { font-weight:700; font-size:21px; text-decoration:none; color:var(--text); white-space:nowrap; }
+.nav-list { display:flex; flex-wrap:wrap; list-style:none; gap:9px 23px; padding:0; margin:0; align-items:center; }
+.nav-list a { font-size:16px; text-decoration:none; color:var(--text); padding-bottom:4px; }
+.nav-list a:hover, .nav-list a[aria-current='page'] { border-bottom:2px solid var(--green); color:var(--green-dark); }
+.site-main { min-height:calc(100vh - 235px); position:relative; }
+.site-main.home { overflow:visible; }
+
+
+.hero { display:grid; grid-template-columns:138px minmax(0,1fr); align-items:center; gap:29px; margin:56px 0 44px; }
+.photo { width:130px; height:130px; object-fit:cover; border-radius:50%; border:2px solid #d2ddd9; }
+h1,h2,h3 { line-height:1.18; letter-spacing:-.015em; }
+h1 { font-size:clamp(39px,5.3vw,54px); font-weight:700; margin:0 0 9px; }
+.position { font-size:19px; line-height:1.42; margin:0 0 6px; }
+.affiliation { color:var(--subtle); font-size:17px; line-height:1.4; margin:0; }
+h2 { font-size:29px; margin:0 0 15px; }
+h3 { font-size:22px; margin:0 0 7px; }
+p { margin:0 0 15px; }
+section { margin-bottom:40px; }
+.copy { max-width:760px; }
+.content-section { border-top:1px solid var(--line); padding-top:25px; }
+.lead { font-size:20px; line-height:1.52; max-width:800px; }
+.page-heading { padding:45px 0 22px; }
+.page-heading h1 { margin-bottom:14px; }
+.page-heading p { max-width:790px; }
+.topic { padding:16px 0; border-top:1px solid var(--line); }
+.topic:last-child { border-bottom:1px solid var(--line); }
+.topic h3 { font-size:22px; margin-bottom:6px; }
+.topic p { color:var(--text); margin:0; }
+.topic a { text-decoration:none; }
+.topic a:hover { text-decoration:underline; }
+.pub-item { padding:15px 0 17px; border-top:1px solid var(--line); }
+.pub-item:last-child { border-bottom:1px solid var(--line); }
+.pub-title { margin:0 0 4px; font-weight:700; line-height:1.42; font-size:18px; }
+.pub-byline { margin:0 0 3px; line-height:1.45; color:var(--subtle); font-size:16px; }
+.pub-meta { font-size:16px; margin:0; }
+.year { font-size:22px; margin:30px 0 14px; }
+.kicker { color:var(--subtle); font-size:15px; margin-bottom:7px; letter-spacing:.01em; }
+.research-block { border-top:1px solid var(--line); padding-top:24px; margin-bottom:37px; }
+.research-block h2 { margin-bottom:13px; }
+.research-block ul { margin-top:12px; padding-left:23px; }
+.research-block li { margin-bottom:7px; }
+.subnav { font-size:16px; color:var(--subtle); }
+.bio-block { border-top:1px solid var(--line); padding-top:24px; }
+.bio-block dl { display:grid; grid-template-columns:170px 1fr; gap:9px 24px; }
+.bio-block dt { color:var(--subtle); }
+.bio-block dd { margin:0; }
+.site-footer { border-top:1px solid var(--line); margin-top:55px; padding:22px 0 32px; color:var(--subtle); font-size:15px; }
+.footer-inner { display:flex; flex-wrap:wrap; justify-content:space-between; gap:13px 32px; }
+.footer-links { display:flex; flex-wrap:wrap; gap:8px 17px; }
+.footer-links a { color:var(--subtle); }
+.small { color:var(--subtle); font-size:16px; }
+@media (max-width:630px) { .container { padding-left:20px; padding-right:20px; } .header-inner { align-items:flex-start; flex-direction:column; } .nav-list { gap:7px 17px; } .hero { grid-template-columns:95px 1fr; gap:18px; margin:37px 0 35px; } .photo { width:91px; height:91px; } h1 { font-size:39px; } .position { font-size:17px; } .affiliation { font-size:15px; } body { font-size:17px; } .page-heading { padding:30px 0 18px; }  .bio-block dl { grid-template-columns:1fr; gap:1px; } .bio-block dd { margin-bottom:11px; } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+/* Original network-flow motif, taken from the existing homepage geometry */
+html { overflow-x:clip; }
+body { overflow-x:clip; }
+.site-main > :not(.network-art) { position:relative; z-index:1; }
+.network-art {
+  position:absolute;
+  z-index:0;
+  width:980px;
+  height:auto;
+  aspect-ratio:1440 / 900;
+  right:-545px;
+  top:-55px;
+  opacity:.65;
+  pointer-events:none;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.15) 26%,black 66%);
+  mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.15) 26%,black 66%);
+}
+.network-art img { display:block; width:100%; height:100%; }
+.network-art--secondary {width:740px;right:-455px;top:-80px;opacity:.34}
+.photo-wrap {width:130px;height:130px;border-radius:50%;background:#cbd9d3;display:grid;place-items:center;position:relative;border:2px solid #d2ddd9;overflow:hidden}
+.photo-wrap span {font-weight:700;letter-spacing:.1em;color:#63796e;font-size:23px}
+.photo-wrap img {position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:50%;object-fit:cover;background:#cbd9d3}
+@media (max-width:630px) {
+ .network-art {width:690px;right:-350px;top:-25px;opacity:.36}
+ .network-art--secondary {width:570px;right:-425px;top:-45px;opacity:.26}
+ .photo-wrap {width:91px;height:91px}
+}
+
+/* Approved direction: muted option A (abstract origin–destination flows). */
+.network-art {
+  width:885px;
+  height:638px;
+  aspect-ratio:auto;
+  right:-340px;
+  top:-15px;
+  opacity:.32;
+  -webkit-mask-image:linear-gradient(90deg, transparent 0%,rgba(0,0,0,.08) 19%,black 49%);
+  mask-image:linear-gradient(90deg, transparent 0%,rgba(0,0,0,.08) 19%,black 49%);
+}
+.network-art--secondary {
+  width:680px;
+  height:495px;
+  right:-390px;
+  top:-58px;
+  opacity:.18;
+}
+/* The text remains most prominent; network never acts as a container or panel. */
+.home .hero { margin-bottom:51px; }
+.home .copy { max-width:740px; }
+.home .content-section { margin-top:33px; }
+.home .pub-item { padding:14px 0 16px; }
+.home .publication-link { margin-top:20px; }
+.home .research-inline { color:var(--subtle); }
+.home .research-inline a { color:var(--green-dark); }
+@media (max-width:630px) {
+  .network-art { width:680px; height:495px; right:-365px; top:-13px; opacity:.18; }
+  .network-art--secondary { width:570px; height:415px; right:-430px; top:-35px; opacity:.12; }
+  .home .hero { margin-bottom:38px; }
+}
+
+/* Research page — simple text-led layout, consistent with the homepage. */
+.research-page .page-heading { padding:55px 0 26px; }
+.research-page .lead { max-width:770px; }
+.research-page .research-block { padding:28px 0 29px; margin:0; }
+.research-page .research-block > p { max-width:745px; }
+.research-page .research-block h2 {font-size:27px; margin-bottom:16px;}
+.research-outputs {max-width:760px; padding-top:3px; font-size:16px; line-height:1.5;}
+.research-outputs-label {font-size:15px; font-weight:700; color:var(--subtle); letter-spacing:.02em; margin:10px 0 8px;}
+.research-outputs ul {margin:0; padding:0; list-style:none;}
+.research-outputs li {margin:0 0 8px; padding-left:13px; position:relative;}
+.research-outputs li::before {content:'–';position:absolute;left:0;color:#6d887e;}
+.research-outputs span {color:var(--subtle);}
+.work-status {color:var(--subtle);}
+.research-end-link {margin:20px 0 55px;}
+@media (max-width:630px) { .research-page .page-heading{padding:33px 0 19px;} .research-page .research-block {padding:23px 0 22px;} .research-page .research-block h2{font-size:25px;} .research-outputs {font-size:15px;} }
+
+/* News and engagement — same text-first, restrained structure. */
+.news-page .page-heading { padding:55px 0 23px; }
+.news-page .page-heading .lead { max-width:710px; }
+.news-section { border-top:1px solid var(--line); padding-top:25px; margin-bottom:45px; max-width:810px; }
+.news-section h2 { margin-bottom:18px; }
+.news-entry { padding:17px 0 19px; border-top:1px solid var(--line); }
+.news-entry:first-of-type { border-top:0; padding-top:2px; }
+.news-entry .kicker { margin-bottom:5px; }
+.news-entry h3 { font-size:21px; line-height:1.32; margin-bottom:7px; }
+.news-entry p:last-child { margin-bottom:0; max-width:700px; }
+.news-section > p { max-width:755px; }
+.policy-subtitle { color:var(--subtle); margin-top:-8px; margin-bottom:24px; }
+.related-links { padding-top:3px; font-size:16px; }
+.related-links ul { list-style:none; padding-left:0; margin:0; }
+.related-links li { padding-left:15px; position:relative; margin:0 0 9px; }
+.related-links li:before { content:'–'; position:absolute; left:0; color:#6d887e; }
+@media (max-width:630px) { .news-page .page-heading { padding:33px 0 17px; } .news-section { padding-top:20px; } .news-entry { padding:15px 0 17px; } .news-entry h3 { font-size:20px; } }
+
+/* Publications: a complete, readable bibliography rather than cards. */
+.publications-page .page-heading { padding:55px 0 26px; }
+.publications-page .lead { max-width:740px; }
+.publications-index { display:flex; flex-wrap:wrap; gap:2px 10px; font-size:15px; line-height:1.6; margin:15px 0 4px; color:var(--subtle); }
+.publications-index a { text-decoration:none; }
+.publications-index a:hover { text-decoration:underline; }
+.publications-group { border-top:1px solid var(--line); padding-top:28px; margin-bottom:42px; max-width:800px; }
+.publications-group h2 { font-size:28px; margin-bottom:18px; }
+.publications-group .pub-year { font-size:21px; margin:24px 0 10px; color:var(--subtle); }
+.publications-group .pub-year:first-of-type { margin-top:12px; }
+.publications-page .pub-item { padding:13px 0 15px; border-top:1px solid var(--line); }
+.publications-page .pub-item:last-of-type { border-bottom:0; }
+.publications-page .pub-title { font-size:18px; font-weight:700; margin-bottom:4px; max-width:780px; }
+.publications-page .pub-title a { color:var(--text); text-decoration:none; }
+.publications-page .pub-title a:hover { color:var(--green-dark); text-decoration:underline; }
+.publications-page .pub-meta { line-height:1.5; }
+.publications-page .pub-meta em { font-style:italic; }
+.pub-note { font-size:15px; color:var(--subtle); margin-top:11px; }
+.publications-last-note { margin-top:8px; }
+@media (max-width:630px) {
+ .publications-page .page-heading { padding:33px 0 18px; }
+ .publications-group { padding-top:22px; margin-bottom:30px; }
+ .publications-group h2 { font-size:25px; }
+ .publications-page .pub-item { padding:12px 0 13px; }
+ .publications-page .pub-title { font-size:17px; }
+ .publications-page .pub-byline, .publications-page .pub-meta { font-size:15px; }
+}
+
+/* About: same editorial design language as Research and Publications. */
+.about-page .page-heading { padding:55px 0 24px; }
+.about-page .page-heading .lead { max-width:750px; }
+.about-section { border-top:1px solid var(--line); padding:25px 0 5px; max-width:800px; }
+.about-section h2 { margin:0 0 17px; font-size:27px; }
+.about-section p { max-width:745px; }
+.about-timeline { display:grid; grid-template-columns:130px minmax(0,1fr); column-gap:25px; row-gap:14px; margin:4px 0 17px; }
+.about-timeline dt { color:var(--subtle); font-size:16px; line-height:1.5; }
+.about-timeline dd { margin:0; line-height:1.5; }
+@media (max-width:630px) {
+  .about-page .page-heading {padding:33px 0 19px;}
+  .about-section {padding:21px 0 3px;}
+  .about-section h2 {font-size:25px;}
+  .about-timeline {grid-template-columns:1fr; row-gap:2px;}
+  .about-timeline dt {margin-top:11px;}
+  .about-timeline dt:first-of-type {margin-top:0;}
+  .about-timeline dd {margin-bottom:8px;}
+}
+
+/* Subtle spatial-flow movement; disabled when reduced motion is preferred. */
+@keyframes geographic-drift { from { transform:translate(0,0); } to { transform:translate(7px,-5px); } }
+.network-art img { animation:geographic-drift 22s ease-in-out infinite alternate; }
+@media (prefers-reduced-motion:reduce) { .network-art img { animation:none; } }

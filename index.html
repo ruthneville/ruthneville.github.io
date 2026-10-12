@@ -1,413 +1,67 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <!-- Google Fonts: Roboto Condensed -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ruth Neville, PhD </title>
-  <meta name="description" content="Academic homepage of Ruth Neville: research, publications, teaching, talks, and contact." />
-  <meta property="og:title" content="Ruth Neville PhD" />
-  <meta property="og:description" content="Research, publications,and contact." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0f172a" />
-  <link rel="icon" href="assets/favicon.png" />
-  <style>
-    /* Professional color palette */
-    :root {
-  --bg: #f8fafc; /* Clean light grey background */
-  --text: #1e293b; /* Professional dark grey text */
-  --muted: #64748b; /* Medium grey for muted text */
-  --link: #1e293b; /* Professional blue for links */
-  --card: #ffffff; /* Clean white card background */
-  --accent: #e2e8f0; /* Light grey accent */
-  --border: #e2e8f0; /* Light grey border */
-  --shadow: rgba(15, 23, 42, 0.08); /* Subtle professional shadow */
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-    body {
-      font-family: 'Roboto Condensed', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
-      line-height: 1.6;
-      color: var(--text);
-      font-size: 1.1rem; /* Increased base font size */
-      background: var(--bg); /* Reset to plain background */
-    }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 980px; margin: 0 auto; padding: 2rem 1.25rem; }
-
-    /* Header */
-    header { position: sticky; top: 0; backdrop-filter: saturate(180%) blur(10px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid rgba(148,163,184,.15); z-index: 50; }
-    .nav { display: flex; gap: 1rem; align-items: center; justify-content: space-between; }
-    .brand { font-weight: 700; letter-spacing: .2px; font-size: 1.05rem; }
-    .menu { display: flex; gap: .9rem; flex-wrap: wrap; }
-    .menu a { padding: .35rem .6rem; border-radius: .6rem; }
-    .menu a:hover { background: rgba(148,163,184,.15); text-decoration: none; }
-
-    /* Hero */
-    .hero { display: grid; grid-template-columns: 120px 1fr; gap: 1.25rem; align-items: center; padding-top: 1.5rem; }
-    .avatar {
-  width: 130px; /* Reduced size */
-  height: 130px; /* Reduced size */
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 10px 25px var(--shadow);
-  border: 3px solid rgba(148,163,184,.25);
-  background: var(--card);
-}
-    .title { font-size: clamp(2.4rem, 5vw, 3.5rem); margin: 0 0 .25rem; }
-    .subtitle { 
-      margin: 0; 
-      color: var(--muted); 
-      font-size: 1rem; /* Reduced subtitle size */
-    }
-
-    .job-title {
-      font-weight: bold;
-      font-size: 1.4rem; /* Enhanced job title */
-      color: var(--text);
-    }
-
-    .research-interests {
-      font-style: italic;
-      font-size: 1.2rem; /* Enhanced research interests */
-      color: var(--muted);
-    }
-
-    /* Cards */
-    section { margin-top: 2rem; }
-    .card { 
-      background: color-mix(in oklab, var(--card) 92%, transparent); 
-      border: 1px solid rgba(148,163,184,.18); 
-      box-shadow: 0 10px 30px var(--shadow); 
-      border-radius: 1.25rem; 
-      padding: 1.25rem;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px var(--shadow);
-    }
-    .card h2 { 
-      margin-top: 0; 
-      font-size: 1.5rem; /* Made headers larger */
-      margin-bottom: 1rem; /* Added spacing below headers */
-    }
-
-    /* Lists */
-    .grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
-    @media (min-width: 800px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
-    .pub { 
-      margin: 0; 
-      list-style: none; /* Removed numbers */
-      padding-left: 0; /* Adjusted padding for alignment */
-    }
-    .pub li { margin-bottom: .9rem; }
-    .tags { display: inline-flex; gap: .35rem; flex-wrap: wrap; }
-    .tag { 
-      font-size: .75rem; 
-      background: rgba(56,189,248,.15); 
-      border: 1px solid rgba(56,189,248,.35); 
-      color: var(--text); 
-      padding: .1rem .45rem; 
-      border-radius: .5rem;
-      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
-      cursor: pointer;
-    }
-    .tag:hover {
-      transform: scale(1.1);
-      background: var(--accent);
-      color: #fff;
-    }
-
-    /* Footer */
-    footer { margin: 3rem 0 2rem; color: var(--muted); font-size: .95rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
-
-    /* Utilities */
-    .pill { display: inline-flex; align-items: center; gap: .5rem; border: 1px solid rgba(148,163,184,.25); padding: .35rem .6rem; border-radius: 999px; background: rgba(148,163,184,.10); }
-    .btn { 
-      display: inline-block; 
-      padding: .55rem .9rem; 
-      border-radius: .9rem; 
-      border: 1px solid rgba(148,163,184,.25); 
-      background: linear-gradient(180deg, color-mix(in oklab, var(--card) 95%, transparent), color-mix(in oklab, var(--card) 75%, transparent)); 
-      box-shadow: 0 8px 20px var(--shadow);
-      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
-    }
-    .btn:hover { 
-      filter: brightness(1.05); 
-      text-decoration: none;
-      transform: translateY(-2px);
-      box-shadow: 0 12px 25px var(--shadow);
-    }
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
-    
-    /* Animations */
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); } /* Increased amplitude */
-      100% { transform: translateY(0px); }
-    }
-    
-    @keyframes floatSlow {
-      0% { transform: translateY(0px) translateX(0px); }
-      33% { transform: translateY(-16px) translateX(4px); } /* Increased amplitude */
-      66% { transform: translateY(10px) translateX(-2px); } /* Increased amplitude */
-      100% { transform: translateY(0px) translateX(0px); }
-    }
-    
-    /* Apply floating animation to background SVG circles */
-    div[style*="position:fixed"] svg circle {
-      animation: float 6s ease-in-out infinite;
-    }
-    
-    /* Stagger the animation timing for different circles */
-    div[style*="position:fixed"] svg circle:nth-of-type(1) {
-      animation: float 8s ease-in-out infinite;
-      animation-delay: 0s;
-    }
-    div[style*="position:fixed"] svg circle:nth-of-type(2) {
-      animation: floatSlow 10s ease-in-out infinite;
-      animation-delay: -2s;
-    }
-    div[style*="position:fixed"] svg circle:nth-of-type(3) {
-      animation: float 7s ease-in-out infinite;
-      animation-delay: -4s;
-    }
-    div[style*="position:fixed"] svg circle:nth-of-type(4) {
-      animation: floatSlow 9s ease-in-out infinite;
-      animation-delay: -6s;
-    }
-
-    .job-info-box {
-  background: color-mix(in oklab, var(--card) 92%, transparent);
-  border: 1px solid rgba(148,163,184,.18);
-  box-shadow: 0 10px 30px var(--shadow);
-  border-radius: 1.25rem;
-  padding: 1.25rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 1.5rem;
-  margin-bottom: 2.5rem; /* Increased space below the job-info-box */
-  font-size: 0.95rem; /* Made text slightly smaller */
-}
-.job-info-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px var(--shadow);
-}
-
-.card p {
-  line-height: 1.8; /* Improved text readability */
-  margin-bottom: 1rem; /* Added spacing between paragraphs */
-}
-  </style>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ruth Neville | Population geography &amp; spatial data science</title>
+  <meta name="description" content="Ruth Neville is a spatial data scientist and population geographer working on migration, mobility and housing.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  
-
-  <!-- Network or Mobility Flows Background -->
-  <div style="position:fixed; inset:0; z-index:-1; pointer-events:none;">
-    <svg width="100%" height="100%" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100vw; height:100vh;">
-      <!-- Nodes -->
-      <circle cx="720" cy="450" r="10" fill="#059669" /> <!-- Central node -->
-      <circle cx="300" cy="200" r="6" fill="#10b981" /> <!-- Node -->
-      <circle cx="1100" cy="300" r="6" fill="#10b981" /> <!-- Node -->
-      <circle cx="500" cy="700" r="6" fill="#10b981" /> <!-- Node -->
-      <circle cx="900" cy="600" r="6" fill="#10b981" /> <!-- Node -->
-      <circle cx="200" cy="400" r="6" fill="#34d399" /> <!-- Node -->
-      <circle cx="1200" cy="500" r="6" fill="#34d399" /> <!-- Node -->
-      <circle cx="600" cy="150" r="6" fill="#34d399" /> <!-- Node -->
-      <circle cx="800" cy="750" r="6" fill="#34d399" /> <!-- Node -->
-      <!-- Additional Nodes for Complexity -->
-      <circle cx="100" cy="300" r="4" fill="#6ee7b7" opacity="0.7" /> <!-- Node -->
-      <circle cx="1300" cy="400" r="4" fill="#6ee7b7" opacity="0.7" /> <!-- Node -->
-      <circle cx="400" cy="800" r="4" fill="#6ee7b7" opacity="0.7" /> <!-- Node -->
-      <circle cx="1000" cy="100" r="4" fill="#6ee7b7" opacity="0.7" /> <!-- Node -->
-
-      <!-- Flows -->
-      <path d="M720,450 Q500,300 300,200" stroke="url(#gradientFlow)" stroke-width="2" fill="none" />
-      <path d="M720,450 Q900,400 1100,300" stroke="url(#gradientFlow)" stroke-width="2" fill="none" />
-      <path d="M720,450 Q600,600 500,700" stroke="url(#gradientFlow)" stroke-width="2" fill="none" />
-      <path d="M720,450 Q800,500 900,600" stroke="url(#gradientFlow)" stroke-width="2" fill="none" />
-      <path d="M720,450 Q400,350 200,400" stroke="url(#gradientFlow2)" stroke-width="2" fill="none" />
-      <path d="M720,450 Q1000,550 1200,500" stroke="url(#gradientFlow2)" stroke-width="2" fill="none" />
-      <path d="M720,450 Q650,200 600,150" stroke="url(#gradientFlow2)" stroke-width="2" fill="none" />
-      <path d="M720,450 Q850,700 800,750" stroke="url(#gradientFlow2)" stroke-width="2" fill="none" />
-      <!-- Additional Flows for Complexity -->
-      <path d="M720,450 Q200,250 100,300" stroke="url(#gradientFlow3)" stroke-width="1.5" fill="none" opacity="0.6" />
-      <path d="M720,450 Q1300,450 1300,400" stroke="url(#gradientFlow3)" stroke-width="1.5" fill="none" opacity="0.6" />
-      <path d="M720,450 Q400,900 400,800" stroke="url(#gradientFlow3)" stroke-width="1.5" fill="none" opacity="0.6" />
-      <path d="M720,450 Q1100,50 1000,100" stroke="url(#gradientFlow3)" stroke-width="1.5" fill="none" opacity="0.6" />
-
-      <!-- Gradient Definitions -->
-      <defs>
-        <linearGradient id="gradientFlow" x1="0" y1="0" x2="1" y2="1" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stop-color="#10b981" />
-          <stop offset="100%" stop-color="#059669" />
-        </linearGradient>
-        <linearGradient id="gradientFlow2" x1="0" y1="0" x2="1" y2="1" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stop-color="#34d399" />
-          <stop offset="100%" stop-color="#059669" />
-        </linearGradient>
-        <!-- Additional Gradient Definition for Fainter Lines -->
-        <linearGradient id="gradientFlow3" x1="0" y1="0" x2="1" y2="1" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stop-color="#6ee7b7" stop-opacity="0.5" />
-          <stop offset="100%" stop-color="#10b981" stop-opacity="0.5" />
-        </linearGradient>
-      </defs>
-
-      <!-- Animated Flows -->
-      <style>
-        path {
-          stroke-dasharray: 300;
-          stroke-dashoffset: 300;
-          animation: flowAnimation 6s linear infinite; /* Slowed down */
-        }
-
-        path:nth-of-type(9) {
-          animation: flowAnimationReverse 8s linear infinite; /* Slowed down */
-        }
-
-        path:nth-of-type(10) {
-          animation: flowAnimation 10s ease-in-out infinite; /* Slowed down */
-        }
-
-        @keyframes flowAnimation {
-          to {
-            stroke-dashoffset: 0;
-          }
-        }
-
-        @keyframes flowAnimationReverse {
-          to {
-            stroke-dashoffset: -300;
-          }
-        }
-      </style>
-    </svg>
-  </div>
-
-  <header>
-    <div class="container nav" role="navigation" aria-label="Primary">
-      <a href="#top" class="brand">Ruth Neville</a>
-      <nav class="menu" aria-label="Sections">
-        <a href="#about">About</a>
-        <a href="#phd">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<header class="site-header"><div class="container header-inner">
+  <a href="index.html" class="wordmark">Ruth Neville</a>
+  <nav aria-label="Primary navigation"><ul class="nav-list">
+    <li><a href="index.html" aria-current="page">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li><li><a href="news.html">News &amp; Engagement</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="assets/CV.pdf">CV</a></li>
+  </ul></nav>
+</div></header>
+<main class="container site-main home">
+  <div class="network-art" aria-hidden="true"><img src="assets/spatial-flows.svg" alt=""></div>
+  <div class="hero">
+    <div class="photo-wrap"><span aria-hidden="true">RN</span>
+      <img src="assets/headshot.jpg" alt="Portrait of Ruth Neville" onerror="this.style.display='none'">
     </div>
-  </header>
-
-  <main id="top" class="container">
-    <!-- HERO -->
-    <section class="hero" aria-labelledby="home-title">
-      <img src="assets/headshot.jpg" alt="" class="avatar" />
-      <div class="job-info-box">
-        <h1 id="home-title" class="title">Ruth Neville</h1>
-        <p class="subtitle"><strong>Research Fellow</strong> · The Bartlett Centre for Advanced Spatial Analysis (CASA) · University College London</p>
-        <p class="subtitle"> Computational Social Science · Human Mobility · Spatial Analysis · Innovative Forms of Data </p>
-        <p style="margin-top: .9rem;">
-          <a class="btn" href="#contact">Get in touch</a>
-          <a class="btn" href="assets/CV.pdf" download>Download CV</a>
-        </p>
-      </div>
-    </section>
-
-    <!-- ABOUT & RESEARCH GRID -->
-      <article id="about" class="card" aria-labelledby="about-title">
-        <h2 id="about-title">About</h2>
-        <p>I am a spatial data scientist specialising in population geography and demography, with a focus on housing and migration and mobility. My PhD research investigated international student mobility and the socio-economic, cultural, economic, and institutional factors shaping migration flows, with an emphasis on the impact of external shocks such as Brexit and the COVID-19 pandemic. My work employs advanced methodologies, including machine learning forecasting models and spatial interaction models to predict and measure population trends. I have also contributed to projects that leverage innovative spatial data sources, such as digital trace data, to analyse population movements during crises. I am currently employed as a Research Fellow on the <a href = "https://www.nospacelikehome.study/" target = "_blank"> No Space Like Home</a> project, understanding the spatial distribution of small homes in England. </p>
-      </article>
-
-            <!-- PHD RESEARCH SECTION -->
-      <section id="phd" class="card" aria-labelledby="phd-title">
-        <h2 id="phd-title">PhD Research: <p>Drivers, Disruptions, and Future Trajectories: Understanding International Student Mobility to the UK</p></h2>
-        <p><strong>Completion Date:</strong> July 2025</p>
-        <p>My PhD research explores the trends, disruptions, and future pathways of international students coming to the UK — a country that attracts more overseas students than almost anywhere else in the world.</p>
-
-        <div style="margin-top: 1rem;">
-          <h3 style="font-size: 1.2rem; color: var(--muted);">Key Areas of Analysis:</h3>
-          <ul style="list-style: disc; margin-left: 1.5rem;">
-            <li><strong>Drivers:</strong> What drives students to choose the UK — from economic and cultural ties to language and development levels.</li>
-            <li><strong>Disruptions:</strong> How global events reshape mobility — particularly the impacts of Brexit and the COVID-19 pandemic.</li>
-            <li><strong>Future Trajectories:</strong> Where student flows are headed next — using advanced forecasting methods that blend statistical modelling and machine learning.</li>
-          </ul>
-        </div>
-
-        <div style="margin-top: 1rem;">
-          <h3 style="font-size: 1.2rem; color: var(--muted);">Key Findings:</h3>
-          <ul style="list-style: disc; margin-left: 1.5rem;">
-            <li>A non-linear link between development and international student mobility, challenging “one-size-fits-all” migration models.</li>
-            <li>A sharp post-Brexit drop in EU applications (especially from Eastern Europe), alongside surprising resilience to COVID-19 restrictions.</li>
-            <li>Projections to 2029 suggesting growth from India, continued EU declines, and possible stagnation from China.</li>
-          </ul>
-        </div>
-
-        <p style="margin-top: 1rem;">By combining spatial analysis, difference-in-differences, and forecasting, this work offers new insights for policy and planning — helping ensure the UK remains a competitive study destination in an uncertain global landscape.</p>
-
-        <ul style="margin-top: 1rem; list-style: none; padding-left: 0;">
-          <li style="margin-bottom: 1rem;">
-            <strong>Nonlinear relationships between human development and international student mobility: The prominent role of employment prospects and cultural and linguistic ties </strong>(2024). <em>Population, Space, and Place</em><br/>
-            <span>Authors: <strong>Ruth Neville</strong>, Francisco Rowe, Alex Singleton</span><br/>
-            <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/psp.2764" target="_blank" style="color: var(--link); text-decoration: underline;">DOI</a>
-          </li>
-          <li style="margin-bottom: 1rem;">
-            <strong>Unraveling the Brexit–COVID-19 nexus: assessing the decline of EU student applications into UK universities </strong>(2024). <em>Data & Policy</em><br/>
-            <span>Authors: <strong>Ruth Neville</strong>, Francisco Rowe, Alex Singleton</span><br/>
-            <a href="https://www.cambridge.org/core/journals/data-and-policy/article/unraveling-the-brexitcovid19-nexus-assessing-the-decline-of-eu-student-applications-into-uk-universities/12FF4448EF52FE80CDE5FFF6708F0137" target="_blank" style="color: var(--link); text-decoration: underline;">DOI</a>
-          </li>
-        </ul>
-      </section>
-
-
-
-    <!-- PUBLICATIONS -->
-    <section id="publications" class="card" aria-labelledby="pubs-title">
-      <h2 id="pubs-title">Selected Publications</h2>
-      <ol class="pub" reversed>
-        <li>
-          <strong>Beyond the Immediate Impacts of COVID-19 on Internal Population Movements in Mexico: Facebook Data Reveal Urban Decay and Slow Recovery—A Research Note</strong> (2025). <em>Demography</em>. <br/>
-          Authors: Miguel González-Leonardo, Carmen Cabrera, <strong>Ruth Neville</strong>, Andrea Nasuto, Francisco Rowe <br/>
-          <a href="https://doi.org/10.1215/00703370-12183205" target="_blank">DOI</a> 
-        </li>
-        <li>
-          <strong>Medium-term changes in the patterns of internal population movements in Latin American countries: effects of the COVID-19 pandemic</strong> (2024). <em>Población y Desarrollo</em>. <br/>
-          Authors: Francisco Rowe, Carmen Cabrera-Arnau, Miguel González-Leonardo, Andrea Nasuto, <strong>Ruth Neville</strong> <br/>
-          Naciones Unidas Comisión Económica para América Latina y el Caribe (CEPAL) <br> <a href = "https://ideas.repec.org/p/ecr/col045/80723.html" target= "_blank">DOI</a> </li>
-        <li>
-          <strong>Where have Ukrainian refugees gone? Identifying potential settlement areas across European regions integrating digital and traditional geographic data</strong> (2024). <em>Population, Space and Place</em>. <br/>
-          Authors: Miguel González-Leonardo, <strong>Ruth Neville</strong>, Sofía Gil-Clavel, Francisco Rowe <br/>
-          <a href="https://doi.org/10.1002/psp.2790" target="_blank">DOI</a>
-        </li>
-      </ol>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="card" aria-labelledby="contact-title">
-      <h2 id="contact-title">Get in Touch!</h2>
-      <p class="pill" aria-label="Email"><span aria-hidden>📧</span> <a href="mailto:ruth.neville@ucl.ac.uk">ruth.neville@ucl.ac.uk</a></p>
-      <p class="pill"><span aria-hidden>📍</span> London, United Kingdom</p>
-      <p>Profiles: 
-        <a href="https://orcid.org/0009-0003-0278-2675" aria-label="ORCID">ORCID</a> · 
-        <a href="https://scholar.google.com/citations?user=s_oU91kAAAAJ&hl=en" aria-label="Google Scholar">Google Scholar</a> · 
-        <a href="https://web-cdn.bsky.app/profile/ruthneville20.bsky.social" aria-label="Bluesky">Bluesky</a> · 
-        <a href="https://www.linkedin.com/in/ruth-neville-320b0610a/?originalSubdomain=uk" aria-label="LinkedIn">LinkedIn</a>
-      </p>
-    </section>
-
-    <footer>
-      <span>© <span id="year"></span> Ruth Neville</span>
-      <span>
-        <a href="#top">Back to top ↑</a>
-      </span>
-    </footer>
-  </main>
-
-  <script>
-    // Current year for footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+    <div><h1>Ruth Neville</h1>
+      <p class="position">Research Fellow · The Bartlett Centre for Advanced Spatial Analysis (CASA)</p>
+      <p class="affiliation">University College London</p>
+    </div>
+  </div>
+  <section class="copy" aria-labelledby="home-about">
+    <h2 id="home-about">About</h2>
+    <p>I am a spatial data scientist and population geographer with research interests in migration, mobility and housing. My work combines spatial analysis, statistical modelling and computational methods to investigate patterns of population movement and change.</p>
+    <p>I am currently a Research Fellow at UCL, working on the <a href="https://www.nospacelikehome.study/">No Space Like Home?</a> project, which examines the geography of very small homes in England. I completed my PhD in Geographic Data Science at the University of Liverpool in 2025, focusing on international student mobility to the UK, including its drivers, responses to Brexit and COVID-19, and future trajectories.</p>
+    <p class="research-inline"><a href="research.html">More about my research →</a></p>
+  </section>
+  <section class="content-section" aria-labelledby="home-publications">
+    <h2 id="home-publications">Selected publications</h2>
+    <article class="pub-item">
+      <p class="pub-title"><a href="https://doi.org/10.1038/s41467-026-77425-z">Machine learning forecasts suggest a concentration paradox in international student mobility to the United Kingdom</a></p>
+      <p class="pub-byline">Ruth Neville, Francisco Rowe &amp; Emilio Zagheni</p>
+      <p class="pub-meta"><em>Nature Communications</em> (2026)</p>
+    </article>
+    <article class="pub-item">
+      <p class="pub-title"><a href="https://doi.org/10.1080/09649069.2025.2569182">Implementing the nationally described space standard: regulating housing in a devolved planning system</a></p>
+      <p class="pub-byline">Ella Harris, Phil Hubbard, Ruth Neville &amp; Eleanor Wilkinson</p>
+      <p class="pub-meta"><em>Journal of Social Welfare and Family Law</em> (2025)</p>
+    </article>
+    <article class="pub-item">
+      <p class="pub-title"><a href="https://doi.org/10.1215/00703370-12183205">Beyond the immediate impacts of COVID-19 on internal population movements in Mexico: Facebook data reveal urban decay and slow recovery — a research note</a></p>
+      <p class="pub-byline">Miguel González-Leonardo, Carmen Cabrera, Ruth Neville, Andrea Nasuto &amp; Francisco Rowe</p>
+      <p class="pub-meta"><em>Demography</em> (2025)</p>
+    </article>
+    <p class="publication-link"><a href="publications.html">All publications →</a> &nbsp;·&nbsp; <a href="news.html">News &amp; engagement →</a></p>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-inner">
+  <div>© Ruth Neville · <a href="mailto:ruth.neville@ucl.ac.uk">ruth.neville@ucl.ac.uk</a></div>
+  <div class="footer-links">
+    <a href="https://orcid.org/0009-0003-0278-2675">ORCID</a>
+    <a href="https://scholar.google.com/citations?user=s_oU91kAAAAJ&amp;hl=en">Google Scholar</a>
+    <a href="https://bsky.app/profile/ruthneville20.bsky.social">Bluesky</a>
+    <a href="https://www.linkedin.com/in/ruth-neville-320b0610a/">LinkedIn</a>
+  </div>
+</div></footer>
+</body></html>

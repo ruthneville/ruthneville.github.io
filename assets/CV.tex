@@ -1,0 +1,644 @@
+
+\documentclass[a4paper,10.5pt]{article}
+
+% ===============================================================
+% PACKAGES
+% ===============================================================
+
+\usepackage[
+  top=0.68in,
+  bottom=0.70in,
+  left=0.72in,
+  right=0.72in
+]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% ===============================================================
+% COLOURS
+% ===============================================================
+
+\definecolor{bodytext}{gray}{0.08}
+\definecolor{mutedtext}{gray}{0.38}
+\definecolor{rulecolour}{gray}{0.70}
+
+\color{bodytext}
+
+% ===============================================================
+% GENERAL LAYOUT
+% ===============================================================
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+
+\renewcommand{\baselinestretch}{1.035}
+
+% ===============================================================
+% FOOTER
+% ===============================================================
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancyfoot[C]{%
+  {\scriptsize\color{mutedtext}
+  Ruth Neville
+  \hspace{0.5em}|\hspace{0.5em}
+  \thepage/\pageref{LastPage}}
+}
+
+% ===============================================================
+% SECTION STYLE
+% ===============================================================
+
+\titleformat{\section}
+  {\bfseries\small\color{bodytext}}
+  {}
+  {0pt}
+  {\MakeUppercase}
+  [\vspace{1.5pt}\color{rulecolour}\titlerule]
+
+\titlespacing*{\section}
+  {0pt}
+  {10pt}
+  {4pt}
+
+% ===============================================================
+% LIST STYLE
+% ===============================================================
+
+\setlist[itemize]{
+  leftmargin=1.15em,
+  label=\textbullet,
+  itemsep=1.3pt,
+  topsep=2.5pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+% ===============================================================
+% CUSTOM COMMANDS
+% ===============================================================
+
+% ---------- Header ----------
+
+\newcommand{\cvname}[1]{%
+  \begin{center}
+    {\fontsize{20pt}{22pt}\selectfont\bfseries #1}
+  \end{center}
+  \vspace{-5pt}
+}
+
+\newcommand{\cvsubtitle}[1]{%
+  \begin{center}
+    {\small #1}
+  \end{center}
+  \vspace{-4pt}
+}
+
+\newcommand{\cvcontact}[1]{%
+  \begin{center}
+    {\small\color{mutedtext} #1}
+  \end{center}
+  \vspace{-2pt}
+}
+
+% ---------- Main dated entry ----------
+
+\newcommand{\cventry}[3]{%
+  \vspace{3.5pt}
+  \begin{tabular*}{\textwidth}
+    {@{}p{0.80\textwidth}@{\extracolsep{\fill}}r@{}}
+    {\small\textbf{#1}} &
+    {\small\color{mutedtext} #3} \\[-0.5pt]
+    {\small\textit{#2}} &
+  \end{tabular*}
+  \vspace{1pt}
+}
+
+% ---------- Compact dated entry ----------
+
+\newcommand{\compactentry}[3]{%
+  \vspace{3pt}
+  \begin{tabular*}{\textwidth}
+    {@{}p{0.80\textwidth}@{\extracolsep{\fill}}r@{}}
+    {\small\textbf{#1}} &
+    {\small\color{mutedtext} #3} \\[-0.5pt]
+    {\small\textit{#2}} &
+  \end{tabular*}
+  \vspace{0.5pt}
+}
+
+% ---------- Subheading ----------
+
+\newcommand{\subhead}[1]{%
+  \vspace{4pt}
+  {\small\bfseries #1\par}
+  \vspace{1.5pt}
+}
+
+% ---------- Publication ----------
+
+\newcommand{\pubitem}[1]{%
+  \vspace{2.2pt}
+  {\small
+    \hangindent=1.1em
+    \hangafter=1
+    #1\par
+  }
+}
+
+% ---------- Skills ----------
+
+\newcommand{\skillline}[2]{%
+  \vspace{2pt}
+  {\small\textbf{#1:} #2\par}
+}
+
+% ---------- Bullet ----------
+
+\newcommand{\cvbullet}[1]{%
+  \item {\small #1}
+}
+
+% ---------- Invited talk ----------
+
+\newcommand{\talkentry}[2]{%
+  \vspace{3pt}
+  {\small
+    \textbf{#1}\\[-0.5pt]
+    \textit{#2}\par
+  }
+}
+
+% ---------- Conference year ----------
+
+\newcommand{\confentry}[2]{%
+  \vspace{2.5pt}
+  \begin{tabular*}{\textwidth}
+    {@{}p{0.065\textwidth}@{\hspace{0.65em}}p{0.90\textwidth}@{}}
+    {\small\bfseries #1} &
+    {\small #2}
+  \end{tabular*}
+}
+
+% ===============================================================
+\begin{document}
+% ===============================================================
+
+% ===============================================================
+% HEADER
+% ===============================================================
+
+\cvname{Ruth Neville}
+
+\cvsubtitle{%
+  \textbf{Population Geographer}
+  \hspace{0.4em}|\hspace{0.4em}
+  \textbf{Computational Social Scientist}\\
+  Postdoctoral Research Fellow, UCL CASA
+}
+
+\cvcontact{%
+  \href{mailto:ruth.neville@ucl.ac.uk}{ruth.neville@ucl.ac.uk}
+  \hspace{0.5em}|\hspace{0.5em}
+  \href{https://scholar.google.com/citations?user=s_oU91kAAAAJ&hl=en}{Google Scholar}
+  \hspace{0.5em}|\hspace{0.5em}
+  \href{https://orcid.org/0009-0003-0278-2675}{ORCID}
+  \hspace{0.5em}|\hspace{0.5em}
+  \href{https://github.com/ruthneville}{GitHub}
+}
+
+\vspace{2pt}
+
+% ===============================================================
+\section{Profile}
+% ===============================================================
+
+{\small
+Population geographer and computational social scientist specialising in
+international student mobility, migration systems, demographic forecasting,
+and population change under disruption. My research examines how educational
+and migration pathways are shaped by policy, demographic change, institutional
+relationships, and shocks, and how these processes redistribute people, skills,
+and opportunities across places. My emerging research agenda examines
+international student mobility as both an educational trajectory and an
+upstream component of high-skilled migration and human-capital formation.
+}
+
+\skillline{Methods}{
+Spatial interaction modelling; longitudinal and spatial analysis;
+difference-in-differences and causal inference; demographic forecasting;
+machine learning; network analysis; clustering; data linkage;
+data visualisation; reproducible research workflows
+}
+
+\skillline{Programming}{
+R (advanced: \texttt{tidyverse}, \texttt{sf}, \texttt{ggplot2},
+\texttt{tmap}, R Markdown, Quarto);
+Python (intermediate: \texttt{pandas}, \texttt{scikit-learn},
+\texttt{matplotlib});
+QGIS; \LaTeX; Git/GitHub
+}
+
+% ===============================================================
+\section{Academic Appointments}
+% ===============================================================
+
+\cventry
+{Postdoctoral Research Fellow in Computational Social Science}
+{Centre for Advanced Spatial Analysis (CASA), University College London}
+{2025--present}
+
+\begin{itemize}
+  \cvbullet{Conduct research using large-scale linked administrative and geospatial datasets, including a national database of approximately 25 million residential properties.}
+  \cvbullet{Develop reproducible workflows for data linkage, harmonisation, spatial analysis, modelling, and visualisation.}
+  \cvbullet{Contribute to collaborative research on population, housing, spatial inequality, and urban change; teach GIS and supervise Master's research.}
+\end{itemize}
+
+\cventry
+{UCL Public Policy Fellow}
+{London Borough of Newham / University College London}
+{2026}
+
+\begin{itemize}
+  \cvbullet{Developed demographic and spatial evidence on population change, housing, adult social care, and neighbourhood inequalities for local government and health partners.}
+  \cvbullet{Produced small-area indicators, projections, maps, and analytical briefings for policy-facing decision-making.}
+\end{itemize}
+
+\compactentry
+{Research Assistant --- Digital Twin of Mass Transit}
+{University of Liverpool}
+{2024--2025}
+
+{\small
+Supported interdisciplinary research on spatial data and urban mobility and
+coordinated an international UK--South Korea research workshop on data-driven
+transport planning.
+}
+
+\compactentry
+{Research Assistant --- RECAST / UN Policy Collaboration}
+{University of Liverpool}
+{2023}
+
+{\small
+Contributed to quantitative human-mobility research, data analysis, and
+international research engagement with ECLAC.
+}
+
+\compactentry
+{Research Assistant --- Mobility Patterns of Ukrainians}
+{University of Liverpool}
+{2022}
+
+{\small
+Analysed large-scale Meta digital-trace data alongside traditional geographic
+data to examine refugee mobility following the Russian invasion of Ukraine.
+}
+
+\compactentry
+{Data Analyst}
+{University of Manchester}
+{2018--2020}
+
+% ===============================================================
+\section{Visiting Research Positions}
+% ===============================================================
+
+\cventry
+{Max Planck Institute for Demographic Research (MPIDR)}
+{Visiting Researcher, Department of Digital and Computational Demography}
+{2024}
+
+\begin{itemize}
+  \cvbullet{Spent approximately five months at MPIDR conducting research on international student mobility and migration.}
+  \cvbullet{Developed international student mobility forecasting research with Emilio Zagheni, subsequently published in \textit{Nature Communications}.}
+  \cvbullet{Participated in research activities on international migration and scholarly and high-skilled mobility.}
+\end{itemize}
+
+\cventry
+{United Nations Economic Commission for Latin America and the Caribbean (ECLAC)}
+{Visiting Researcher, Santiago, Chile}
+{2023}
+
+{\small
+Contributed to policy-oriented human-mobility research and co-organised
+research training and stakeholder engagement activities.
+}
+
+% ===============================================================
+\section{Education}
+% ===============================================================
+
+\cventry
+{PhD, Geographic Data Science}
+{University of Liverpool}
+{2020--2025}
+
+{\small
+\textit{Drivers, Disruptions, and Future Trajectories:
+Understanding International Student Mobility to the UK}
+}
+
+\vspace{1.5pt}
+
+{\small
+Combined spatial interaction modelling, difference-in-differences,
+machine learning, and demographic forecasting to examine the structural
+drivers, disruption, and future trajectories of international student mobility.
+}
+
+\vspace{1.5pt}
+
+{\small\color{mutedtext}
+Supervisors: Prof. Alex Singleton and Prof. Francisco Rowe
+}
+
+\compactentry
+{MSc, Geographic Data Science}
+{University of Liverpool}
+{2020--2022}
+
+\compactentry
+{MA, Political Science (Research Route)}
+{University of Manchester}
+{2017--2018}
+
+\compactentry
+{BA (Hons), Philosophy, Politics and Economics --- First Class}
+{Lancaster University}
+{2013--2016}
+
+% ===============================================================
+\section{Selected Publications}
+% ===============================================================
+
+\subhead{International Student Mobility, Education, and Migration}
+
+\pubitem{
+\textbf{Neville, R.}, Rowe, F., \& Zagheni, E. (2026).
+\href{https://doi.org/10.1038/s41467-026-77425-z}{Machine learning forecasts suggest a concentration paradox in international
+student mobility to the United Kingdom.}
+\textit{Nature Communications}, 17, 9604.
+}
+
+\pubitem{
+\textbf{Neville, R.}, Anastasiadou, A. (2025).
+\href{https://publications.iom.int/books/migration-policy-practice-volume-xiv-number-3-september-2025}{Gender dynamics in international student mobility: The case of the United Kingdom.}
+\textit{Migration Policy Practice}.
+}
+
+\pubitem{
+Cabrera, C., \& \textbf{Neville, R.} (2025).
+\href{https://doi.org/10.1080/13603108.2025.2595453}{Widely used but barely trusted: understanding student perceptions on the use of generative AI in higher education.}
+\textit{Perspectives: Policy and Practice in Higher Education}.
+}
+
+\pubitem{
+\textbf{Neville, R.}, Rowe, F., \& Singleton, A. (2024).
+Unravelling the Brexit--COVID-19 nexus: Assessing the decline in EU student applications.
+\textit{Data \& Policy}.
+\href{https://doi.org/10.1017/dap.2024.42}{DOI}.
+}
+
+\pubitem{
+\textbf{Neville, R.}, Rowe, F., \& Singleton, A. (2024).
+Nonlinear relationships between human development and international student mobility:
+The prominent role of employment prospects and cultural and linguistic ties.
+\textit{Population, Space and Place}.
+\href{https://doi.org/10.1002/psp.2764}{DOI}.
+}
+
+\subhead{Population Mobility and Computational Demography}
+
+\pubitem{
+Cabrera, C., González-Leonardo, M., Nasuto, A., \textbf{Neville, R.},
+\& Rowe, F. (2026).
+\href{https://doi.org/10.48550/arXiv.2504.15871}{Sustained changes to urban mobility after COVID-19 amplified socio-economic
+inequalities in Latin America.}
+\textbf{\textit{Nature Communications} --- accepted for publication.}
+}
+
+\pubitem{
+González-Leonardo, M., Cabrera, C., \textbf{Neville, R.},
+Nasuto, A., \& Rowe, F. (2025).
+\href{https://doi.org/10.1215/00703370-12183205}{Beyond the immediate impacts of COVID-19 on internal population movements in Mexico:
+Facebook data reveal urban decay and slow recovery.}
+\textit{Demography}.
+}
+
+\pubitem{
+González-Leonardo, M., \textbf{Neville, R.},
+Gil-Clavel, S., \& Rowe, F. (2024).
+\href{https://doi.org/10.1002/psp.2790}{Where have the Ukrainian refugees gone?
+Integrating digital and traditional geographic data.}
+\textit{Population, Space and Place}.
+}
+
+\subhead{Housing and Urban Change}
+
+\pubitem{
+Harris, E., Hubbard, P., \textbf{Neville, R.}, \& Wilkinson, E. (2025).
+\href{https://doi.org/10.1080/09649069.2025.2569182}{Implementing the nationally described space standard: regulating housing in a devolved planning system.}
+\textit{Journal of Social Welfare and Family Law}, 47(4), 442--463.
+}
+
+% ===============================================================
+\section{Selected Talks and Conferences}
+% ===============================================================
+
+\subhead{Keynote and Invited Talks}
+
+\talkentry
+{Keynote --- RSAI-BIS Annual Conference, Belfast (May 2026)}
+{``Forecasting International Student Mobility in an Era of Uncertainty:
+From Patterns to Prospects''}
+
+\talkentry
+{BEGIN Seminar, University of St Andrews (2026);
+University of Bristol (2025); CASA Seminar Series, UCL (2025)}
+{``Drivers, Disruptions and Future Trajectories:
+Understanding International Student Mobility to the UK''}
+
+\talkentry
+{TU Dortmund --- RAM Colloquium and Talk-toranden Series (2024)}
+{``Forecasting International Student Mobility in an Era of Uncertainty:
+From Patterns to Prospects''}
+
+\subhead{Selected Conference Presentations}
+
+\confentry
+{2026}
+{BeNeLux Geography, Leuven (Oral);
+European Population Conference, Bologna (Oral)}
+
+\confentry
+{2025}
+{International Forum on Migration Statistics, Malmö (Oral);
+Population Association of America, Washington, DC (Poster);
+British Society for Population Studies, Swansea (Oral)}
+
+\confentry
+{2024}
+{Population Association of America, Columbus, OH (Oral and Poster);
+British Society for Population Studies, Bath (Oral);
+Conference on Complex Systems, Exeter (Oral);
+Population Geographies Conference, Belfast (Oral);
+Scholarly Migration and Mobility Symposium,
+Max Planck Institute for Demographic Research (Oral)}
+
+\confentry
+{2023}
+{RGS--IBG Annual International Conference, London (Oral);
+Symposium on the Relevance of Applied Population Geography, Lesbos (Oral);
+British Society for Population Studies, Keele (Oral);
+RSAI-BIS Annual Meeting, Newcastle (Oral);
+Population Association of America, New Orleans, LA (Poster)}
+
+\confentry
+{2022}
+{RSAI-BIS Early Career Colloquium (Oral);
+COST Action European Network on International Student Mobility, Tartu (Oral);
+GISRUK, Liverpool (Oral)}
+
+% ===============================================================
+\section{Grants and Awards}
+% ===============================================================
+
+\begin{itemize}
+  \cvbullet{\textbf{UCL Public Policy Fellowship associated project funding} --- \pounds5,000 (2026)}
+  \cvbullet{\textbf{British Academy Early Career Researcher Network Development Fund} --- 2026}
+  \cvbullet{\textbf{UCL Careers Extra Internship Grant} --- \pounds1,500 (2026)}
+  \cvbullet{\textbf{Royal Geographical Society QMRG Annual Lecture Funding} --- \pounds600 (2026)}
+  \cvbullet{Finalist, University of Liverpool Three Minute Thesis Competition (2024)}
+  \cvbullet{Best Presentation, RSAI-BIS Early Career Colloquium (2022)}
+\end{itemize}
+
+% ===============================================================
+\section{Teaching and Supervision}
+% ===============================================================
+
+\compactentry
+{Lecturer / GIS Teaching}
+{University College London (CASA)}
+{2025--present}
+
+{\small
+Master's-level teaching in GIS, spatial analysis, regression, reproducible
+spatial workflows, and R; supervision of Master's dissertation research.
+}
+
+\compactentry
+{Guest Lecturer and Practical Instructor}
+{University of Oxford}
+{2026}
+
+{\small
+Designed and delivered teaching in spatial analysis for public health,
+including spatial clustering, autocorrelation, and regression in R.
+}
+
+\compactentry
+{Teaching Assistant}
+{University of Liverpool}
+{2022--2025}
+
+{\small
+Teaching across Geographic Information Systems, Geographic Data Science,
+and Social and Spatial Inequalities; undergraduate and postgraduate
+supervision and assessment.
+}
+
+\vspace{3pt}
+
+{\small
+\textbf{Associate Fellow, Advance HE (AFHEA)}
+}
+
+% ===============================================================
+\section{Academic Leadership and Service}
+% ===============================================================
+
+\compactentry
+{Web and Social Media Officer}
+{Quantitative Methods Research Group, Royal Geographical Society}
+{2024--present}
+
+\compactentry
+{Postgraduate Research Representative}
+{Quantitative Methods Research Group, Royal Geographical Society}
+{2022--2024}
+
+\compactentry
+{Co-Editor, Special Section --- \textit{The Geographical Journal}}
+{``Mobilising Spatial Data for Spatial Populations''}
+{2025--present}
+
+\vspace{3pt}
+
+{\small
+\textbf{British Society for Population Studies, 2025--2026:}
+Organiser, chair, and presenter for Novel Data and Methods sessions.
+}
+
+\vspace{2pt}
+
+{\small
+\textbf{Royal Geographical Society Annual Conference, 2023--2026:}
+Session organiser, chair, and presenter.
+}
+
+\vspace{2pt}
+
+{\small
+\textbf{QMRG--\textit{Geographical Journal} Guest Lecture, RGS 2026:}
+Organiser; secured \pounds600 in Royal Geographical Society funding and
+coordinated the associated networking event.
+}
+
+\vspace{2pt}
+
+{\small
+\textbf{Peer Reviewer:}
+\textit{Population, Space and Place};
+\textit{Transactions of the Institute of British Geographers};
+\textit{REGION};
+\textit{Eastern Economic Journal}.
+}
+
+% ===============================================================
+\section{Referees}
+% ===============================================================
+
+{\small
+\textbf{Prof. Francisco Rowe}\\[-1pt]
+Professor in Population Data Science and Lead of the Geographic Data Science
+Lab (GDSL), University of Liverpool\\
+\href{mailto:F.Rowe-Gonzalez@liverpool.ac.uk}
+{F.Rowe-Gonzalez@liverpool.ac.uk}
+
+\vspace{5pt}
+
+\textbf{Prof. Jon Reades}\\[-1pt]
+Professor of Geographic Data Science and Head of Department, UCL CASA\\
+\href{mailto:j.reades@ucl.ac.uk}
+{j.reades@ucl.ac.uk}
+}
+
+\end{document}
